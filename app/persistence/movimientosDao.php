@@ -54,8 +54,7 @@ class movimientosDao {
         return $resultado2;
     }
 
-    public function crearFactura(factura $factura)
-    {
+public function crearFactura(factura $factura){
         $data_source = new DataSource();
         $sql2 = "INSERT INTO factura VALUES (NULL, :idcliente, :idusuario, :fecha_registro, :valor_neto,:tipo_factura, :estado )";
 
@@ -69,9 +68,9 @@ class movimientosDao {
             
         ));
         return $resultado2;
-    }
+}
 
-    public function objmovimiento($id){
+public function objmovimiento($id){
   
     $sql="";
 	$data_source = new DataSource();
@@ -118,11 +117,7 @@ class movimientosDao {
         return $objmovimiento;
     }else {return false;}
     
-    }
-
-
-
-   
+    }   
 
 
   public static function movimientosFactura($proveedor){
@@ -186,7 +181,6 @@ class movimientosDao {
     }else {return false;}
 }
 
-
 public static function itemsFactura($idfactura){
 	
 	$sql="";
@@ -215,7 +209,8 @@ public static function itemsFactura($idfactura){
         return $multiple_array;
     }else {return false;}
 }
-    public static function idlote($idlote){
+
+public static function idlote($idlote){
 	
 	$sql="";
 	$data_source = new DataSource();
@@ -242,36 +237,30 @@ public static function itemsFactura($idfactura){
         }
         return $multiple_array;
     }else {return false;}
-    }
+}
 
-
-
-
-    public static function ultimaIdmovimiento(){
+public static function ultimaIdmovimiento(){
   
         $data_source=new DataSource();
         $data_table=$data_source->ejecutarConsulta(
             " 
             SELECT * FROM `movimientos` ORDER BY `movimientos`.`idmovimientos` DESC limit 1");
             return $data_table[0]["idmovimientos"];
-    }
+}
 
-    public static function ultimoIdfactura(){
+public static function ultimoIdfactura(){
   
             $data_source=new DataSource();
             $data_table=$data_source->ejecutarConsulta(
                 " 
                 SELECT * FROM `factura` ORDER BY `factura`.`idfactura` DESC limit 1");
                 return $data_table[0]["idfactura"];
-    }
+}
     
-    public static function ultimoIditem(){
-  
-        $data_source=new DataSource();
-        $data_table=$data_source->ejecutarConsulta(
-            " 
-            SELECT * FROM `lote` ORDER BY `lote`.`idinterno` DESC LIMIT 1");
-            return $data_table[0]["idinterno"];
+public static function ultimoIditem(){
+    $data_source=new DataSource();
+    $data_table=$data_source->ejecutarConsulta("SELECT * FROM `lote` ORDER BY `lote`.`idinterno` DESC LIMIT 1");
+    return $data_table[0]["idinterno"];
 }   
 
 

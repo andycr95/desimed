@@ -91,7 +91,6 @@ class movimientosController
      
     
 	$arraymovimientos = movimientosDao::movimientosFactura($proveedor);
-	//print_r($arraymovimientos);
     if($arraymovimientos != false){
       echo "<div class='table-responsive'>
       <table class='table table-sm table-hover mb-0'>

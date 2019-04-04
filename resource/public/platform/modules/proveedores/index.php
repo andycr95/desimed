@@ -3,7 +3,7 @@
  require_once ($_SERVER['DOCUMENT_ROOT'].'/desimed/conf.php');
   
  /* Rutas del directorio de controller */
- require_once(PROVIDER_PATH."clienteController.php");
+ require_once(PROVIDER_PATH."proveedorController.php");
   /* Ruta del archivo de sesion*/
  require_once(CONFIGURATION_PATH."session.php");
  session::verificarSesion($_SESSION['idsesion']);
@@ -121,7 +121,7 @@
                                     </div>
                                 </div>
                                 <div id="tablaDinamica">
-                                    <?php clienteController::listaClientes('az','tc',null);?>
+                                    <?php proveedorController::listaproveedores('az','tc',null);?>
                                 </div>
                             </div>
                         </div>
@@ -140,7 +140,7 @@
     <?php  include_once("../../global/layouts/appLib.php");  ?>
     <script src="<?php echo JS_SERVER.'directory.js';  ?>"></script>
     <script src="<?php echo JS_SERVER.'app.js';  ?>"></script>
-    <script src="<?php echo JS_SERVER.'cliente/module.js';  ?>"></script>
+    <script src="<?php echo JS_SERVER.'proveedores/module.js';  ?>"></script>
     <!-- /App Libs -->
 </body>
 </html>

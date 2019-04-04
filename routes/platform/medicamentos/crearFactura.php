@@ -11,33 +11,11 @@
   require_once(MODEL_PATH."factura.php");
   require_once(MODEL_PATH."movimientos.php");
 
-  $modelfactura = new factura(
-	  null,
-	  null,
-	  $_POST['idusuario'],
-	  $_POST['fecha_utilidad'],
-	  0,
-	  $_POST['tipo_factura'],
-	  "BORRADOR"
- );
+  $modelfactura = new factura(null, null, $_POST['idusuario'], $_POST['fecha_utilidad'], 0,  $_POST['tipo_factura'], "BORRADOR" );
 
- 
- print_r($modelfactura );
- 
-//  $url="//".PLATFORM_SERVER."modules/medicamentos/verFicha.php?id=".productoController::ultimoIdmedicamento();
-//  $url2="//".PLATFORM_SERVER."modules/movimientos/registrarMovimientos.php";
-//  echo $url;
-//  echo $url2;
   if(movimientosController::registrarFactura($modelfactura)){
 	  $id = movimientosController::ultimoIdfactura();
-	  echo $_POST['proveedor'];
-	  $modelmovimiento = new movimientos(
-		null,
-		$_POST['proveedor'],
-		$id
-	   );
-	   //print_r($modelmovimiento);
-   
+	  $modelmovimiento = new movimientos(null,$_POST['proveedor'],$id );   
     if(movimientosController::registrarMovimiento($modelmovimiento)){
 		$url ="agregar.php?idmovimiento=".movimientosController::ultimaIdmovimiento();
    

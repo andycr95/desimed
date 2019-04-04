@@ -9,7 +9,6 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/desimed/conf.php');
   session::verificarSesion($_SESSION['idsesion']);
   $objmovimiento = movimientosController::objmovimiento($_GET['idmovimiento']);
   $objusuario =  empleadoController::objempleado($objmovimiento->getIdfactura_movimientos()->getIdusuario());
-  print_r($objmovimiento);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -115,9 +114,9 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/desimed/conf.php');
 											<hr>
 											<div class="col-md-12 form-group">
 												<div id="smgMedicamento">
-													<!-- <div class="alert alert-primary" role="alert">
+													<div class="alert alert-primary" role="alert">
 														This is a primary alert—check it out!
-													</div> -->
+													</div>
 												</div>
 
 												
