@@ -1,0 +1,8 @@
+<?php 
+  // $local="localhost/";
+  // $server= "http://portalx.net/credito/";
+  // $url = $local;
+
+  header("Location: resource/public/web/index.php");
+  //header("Location: resource/public/platform/modules/sesion/mantenimiento.php");
+?>

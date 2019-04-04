@@ -1,0 +1,90 @@
+[15-Jan-2019 14:43:49 UTC] PHP Warning:  include_once(/home1/portalxn/public_html/credito/credito/config/directory.php): failed to open stream: No such file or directory in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/index.php on line 2
+[15-Jan-2019 14:43:49 UTC] PHP Warning:  include_once(): Failed opening '/home1/portalxn/public_html/credito/credito/config/directory.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/index.php on line 2
+[15-Jan-2019 14:43:49 UTC] PHP Warning:  include_once(PERSISTENCE_PATHusuarioDao.php): failed to open stream: No such file or directory in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/index.php on line 3
+[15-Jan-2019 14:43:49 UTC] PHP Warning:  include_once(): Failed opening 'PERSISTENCE_PATHusuarioDao.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/index.php on line 3
+[15-Jan-2019 14:43:49 UTC] PHP Warning:  include_once(PERSISTENCE_PATHsesionDao.php): failed to open stream: No such file or directory in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/index.php on line 4
+[15-Jan-2019 14:43:49 UTC] PHP Warning:  include_once(): Failed opening 'PERSISTENCE_PATHsesionDao.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/index.php on line 4
+[15-Jan-2019 14:43:49 UTC] PHP Warning:  include_once(PERSISTENCE_PATHsucursalDao.php): failed to open stream: No such file or directory in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/index.php on line 5
+[15-Jan-2019 14:43:49 UTC] PHP Warning:  include_once(): Failed opening 'PERSISTENCE_PATHsucursalDao.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/index.php on line 5
+[15-Jan-2019 14:43:49 UTC] PHP Warning:  include_once(PERSISTENCE_PATHfuncionesDao.php): failed to open stream: No such file or directory in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/index.php on line 6
+[15-Jan-2019 14:43:49 UTC] PHP Warning:  include_once(): Failed opening 'PERSISTENCE_PATHfuncionesDao.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/index.php on line 6
+[15-Jan-2019 14:43:49 UTC] PHP Fatal error:  Uncaught Error: Class 'sesionDao' not found in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/index.php on line 17
+[04-Feb-2019 22:44:14 UTC] PHP Warning:  include_once(/home1/portalxn/public_html/credito/credito/config/directory.php): failed to open stream: No such file or directory in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 2
+[04-Feb-2019 22:44:14 UTC] PHP Warning:  include_once(): Failed opening '/home1/portalxn/public_html/credito/credito/config/directory.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 2
+[04-Feb-2019 22:44:14 UTC] PHP Warning:  include_once(PERSISTENCE_PATHusuarioDao.php): failed to open stream: No such file or directory in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 3
+[04-Feb-2019 22:44:14 UTC] PHP Warning:  include_once(): Failed opening 'PERSISTENCE_PATHusuarioDao.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 3
+[04-Feb-2019 22:44:14 UTC] PHP Warning:  include_once(PERSISTENCE_PATHsesionDao.php): failed to open stream: No such file or directory in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 4
+[04-Feb-2019 22:44:14 UTC] PHP Warning:  include_once(): Failed opening 'PERSISTENCE_PATHsesionDao.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 4
+[04-Feb-2019 22:44:14 UTC] PHP Warning:  include_once(PERSISTENCE_PATHsucursalDao.php): failed to open stream: No such file or directory in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 5
+[04-Feb-2019 22:44:14 UTC] PHP Warning:  include_once(): Failed opening 'PERSISTENCE_PATHsucursalDao.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 5
+[04-Feb-2019 22:44:14 UTC] PHP Warning:  include_once(PERSISTENCE_PATHfuncionesDao.php): failed to open stream: No such file or directory in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 6
+[04-Feb-2019 22:44:14 UTC] PHP Warning:  include_once(): Failed opening 'PERSISTENCE_PATHfuncionesDao.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 6
+[04-Feb-2019 22:44:14 UTC] PHP Fatal error:  Uncaught Error: Class 'sesionDao' not found in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php:17
+Stack trace:
+#0 {main}
+  thrown in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 17
+[04-Feb-2019 22:44:48 UTC] PHP Warning:  include_once(/home1/portalxn/public_html/credito/credito/config/directory.php): failed to open stream: No such file or directory in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 2
+[04-Feb-2019 22:44:48 UTC] PHP Warning:  include_once(): Failed opening '/home1/portalxn/public_html/credito/credito/config/directory.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 2
+[04-Feb-2019 22:44:48 UTC] PHP Warning:  include_once(PERSISTENCE_PATHcarteraDao.php): failed to open stream: No such file or directory in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 3
+[04-Feb-2019 22:44:48 UTC] PHP Warning:  include_once(): Failed opening 'PERSISTENCE_PATHcarteraDao.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 3
+[04-Feb-2019 22:44:48 UTC] PHP Warning:  include_once(PERSISTENCE_PATHentidadDao.php): failed to open stream: No such file or directory in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 4
+[04-Feb-2019 22:44:48 UTC] PHP Warning:  include_once(): Failed opening 'PERSISTENCE_PATHentidadDao.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 4
+[04-Feb-2019 22:44:48 UTC] PHP Warning:  include_once(PERSISTENCE_PATHfuncionesDao.php): failed to open stream: No such file or directory in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 5
+[04-Feb-2019 22:44:48 UTC] PHP Warning:  include_once(): Failed opening 'PERSISTENCE_PATHfuncionesDao.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 5
+[04-Feb-2019 22:44:48 UTC] PHP Fatal error:  Uncaught Error: Class 'carteraDao' not found in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php:34
+Stack trace:
+#0 {main}
+  thrown in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 34
+[04-Feb-2019 22:44:49 UTC] PHP Warning:  include_once(/home1/portalxn/public_html/credito/credito/config/directory.php): failed to open stream: No such file or directory in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 2
+[04-Feb-2019 22:44:49 UTC] PHP Warning:  include_once(): Failed opening '/home1/portalxn/public_html/credito/credito/config/directory.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 2
+[04-Feb-2019 22:44:49 UTC] PHP Warning:  include_once(PERSISTENCE_PATHcarteraDao.php): failed to open stream: No such file or directory in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 3
+[04-Feb-2019 22:44:49 UTC] PHP Warning:  include_once(): Failed opening 'PERSISTENCE_PATHcarteraDao.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 3
+[04-Feb-2019 22:44:49 UTC] PHP Warning:  include_once(PERSISTENCE_PATHentidadDao.php): failed to open stream: No such file or directory in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 4
+[04-Feb-2019 22:44:49 UTC] PHP Warning:  include_once(): Failed opening 'PERSISTENCE_PATHentidadDao.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 4
+[04-Feb-2019 22:44:49 UTC] PHP Warning:  include_once(PERSISTENCE_PATHfuncionesDao.php): failed to open stream: No such file or directory in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 5
+[04-Feb-2019 22:44:49 UTC] PHP Warning:  include_once(): Failed opening 'PERSISTENCE_PATHfuncionesDao.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 5
+[04-Feb-2019 22:44:49 UTC] PHP Fatal error:  Uncaught Error: Class 'carteraDao' not found in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php:34
+Stack trace:
+#0 {main}
+  thrown in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 34
+[04-Feb-2019 22:44:50 UTC] PHP Warning:  include_once(/home1/portalxn/public_html/credito/credito/config/directory.php): failed to open stream: No such file or directory in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 2
+[04-Feb-2019 22:44:50 UTC] PHP Warning:  include_once(): Failed opening '/home1/portalxn/public_html/credito/credito/config/directory.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 2
+[04-Feb-2019 22:44:50 UTC] PHP Warning:  include_once(PERSISTENCE_PATHcarteraDao.php): failed to open stream: No such file or directory in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 3
+[04-Feb-2019 22:44:50 UTC] PHP Warning:  include_once(): Failed opening 'PERSISTENCE_PATHcarteraDao.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 3
+[04-Feb-2019 22:44:50 UTC] PHP Warning:  include_once(PERSISTENCE_PATHentidadDao.php): failed to open stream: No such file or directory in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 4
+[04-Feb-2019 22:44:50 UTC] PHP Warning:  include_once(): Failed opening 'PERSISTENCE_PATHentidadDao.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 4
+[04-Feb-2019 22:44:50 UTC] PHP Warning:  include_once(PERSISTENCE_PATHfuncionesDao.php): failed to open stream: No such file or directory in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 5
+[04-Feb-2019 22:44:50 UTC] PHP Warning:  include_once(): Failed opening 'PERSISTENCE_PATHfuncionesDao.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 5
+[04-Feb-2019 22:44:50 UTC] PHP Fatal error:  Uncaught Error: Class 'carteraDao' not found in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php:34
+Stack trace:
+#0 {main}
+  thrown in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 34
+[04-Feb-2019 22:44:51 UTC] PHP Warning:  include_once(/home1/portalxn/public_html/credito/credito/config/directory.php): failed to open stream: No such file or directory in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 2
+[04-Feb-2019 22:44:51 UTC] PHP Warning:  include_once(): Failed opening '/home1/portalxn/public_html/credito/credito/config/directory.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 2
+[04-Feb-2019 22:44:51 UTC] PHP Warning:  include_once(PERSISTENCE_PATHcarteraDao.php): failed to open stream: No such file or directory in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 3
+[04-Feb-2019 22:44:51 UTC] PHP Warning:  include_once(): Failed opening 'PERSISTENCE_PATHcarteraDao.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 3
+[04-Feb-2019 22:44:51 UTC] PHP Warning:  include_once(PERSISTENCE_PATHentidadDao.php): failed to open stream: No such file or directory in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 4
+[04-Feb-2019 22:44:51 UTC] PHP Warning:  include_once(): Failed opening 'PERSISTENCE_PATHentidadDao.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 4
+[04-Feb-2019 22:44:51 UTC] PHP Warning:  include_once(PERSISTENCE_PATHfuncionesDao.php): failed to open stream: No such file or directory in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 5
+[04-Feb-2019 22:44:51 UTC] PHP Warning:  include_once(): Failed opening 'PERSISTENCE_PATHfuncionesDao.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 5
+[04-Feb-2019 22:44:51 UTC] PHP Fatal error:  Uncaught Error: Class 'carteraDao' not found in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php:34
+Stack trace:
+#0 {main}
+  thrown in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 34
+[06-Feb-2019 07:14:10 UTC] PHP Fatal error:  Uncaught Error: Class 'localidad' not found in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php:78
+Stack trace:
+#0 {main}
+  thrown in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 78
+[06-Feb-2019 07:14:14 UTC] PHP Fatal error:  Uncaught Error: Class 'localidad' not found in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php:78
+Stack trace:
+#0 {main}
+  thrown in /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/agregar.php on line 78
+[15-Feb-2019 22:17:27 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home1/portalxn/public_html/credito/app/provider/localidadController.php on line 21
+[15-Feb-2019 22:39:24 UTC] PHP Fatal error:  Uncaught Error: Class 'sucursalDao' not found in /home1/portalxn/public_html/credito/app/provider/sucursalController.php:33
+Stack trace:
+#0 /home1/portalxn/public_html/credito/resource/public/platform/modules/sucursales/index.php(82): sucursalController::listaSucursales()
+#1 {main}
+  thrown in /home1/portalxn/public_html/credito/app/provider/sucursalController.php on line 33

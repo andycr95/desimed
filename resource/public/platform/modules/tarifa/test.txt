@@ -1,0 +1,81 @@
+<div class='row'>
+                                        <div class='col-lg-4 col-sm-12'>
+                                            <div class='card card-refresh'>
+												<div class='refresh-container'>
+													<div class='loader-pendulums'></div>
+												</div>
+												<div class='card-header card-header-action'>
+													<h6>Card Header</h6>
+													<div class='d-flex align-items-center card-action-wrap'>
+														<a class='inline-block mr-15' data-toggle='collapse' href='#collapse_1' aria-expanded='true'>
+															<i class='zmdi zmdi-chevron-down'></i>
+														</a>
+														<div class='inline-block dropdown mr-15'>
+															<a class='dropdown-toggle no-caret' data-toggle='dropdown' href='#' aria-expanded='false' role='button'><i class='ion ion-md-more'></i></a>
+															<div class='dropdown-menu' x-placement='bottom-start' style='position: absolute; transform: translate3d(0px, 24px, 0px); top: 0px; left: 0px; will-change: transform;'>
+																<a class='dropdown-item' href='profile.html'><i class='dropdown-icon zmdi zmdi-account'></i><span>Profile</span></a>
+																<a class='dropdown-item' href='#'><i class='dropdown-icon zmdi zmdi-card'></i><span>my balance</span></a>
+																<a class='dropdown-item' href='inbox.html'><i class='dropdown-icon zmdi zmdi-email'></i><span>Inbox</span></a>
+																<a class='dropdown-item' href='#'><i class='dropdown-icon zmdi zmdi-settings'></i><span>Settings</span></a>
+															</div>
+														</div>
+														<a href='#' class='inline-block refresh mr-15'>
+															<i class='ion ion-md-radio-button-off'></i>
+														</a>
+														<a href='#' class='inline-block full-screen mr-15'>
+															<i class='ion ion-md-expand'></i>
+														</a>
+														<a class='inline-block card-close' href='#' data-effect='fadeOut'>
+															<i class='ion ion-md-close'></i>
+														</a>
+													</div>
+												</div>
+												<div id='collapse_1' class='collapse show' style=''>
+                                                    <div class='card-body'>
+                                                        <h5 class='card-title'>Special Title Treatment</h5>
+                                                        <p class='card-text'>With supporting text below as a natural lead-in to additional content.</p>
+                                                        <a href='#' class='btn btn-primary'>Go somewhere</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class='col-lg-4 col-sm-12'>
+                                            <div class='card'>
+													<div class='card-header card-header-action'>
+														<h6>Card Header</h6>
+														<div class='d-flex align-items-center card-action-wrap'>
+															<div class='dropdown'>
+																<button aria-expanded='false' data-toggle='dropdown' class='btn btn-success btn-sm dropdown-toggle ' type='button'>Dropdown <span class='caret'></span></button>
+																<div role='menu' class='dropdown-menu' x-placement='bottom-start' style='position: absolute; transform: translate3d(0px, 33px, 0px); top: 0px; left: 0px; will-change: transform;'>
+																	<a class='dropdown-item' href='#'>Action</a>
+																	<a class='dropdown-item' href='#'>Another action</a>
+																	<a class='dropdown-item' href='#'>Something else here</a>
+																	<div class='dropdown-divider'></div>
+																	<a class='dropdown-item' href='#'>Separated link</a>
+																</div>
+															</div>
+														</div>
+													</div>
+                                                <div class='card-body'>
+                                                    <h5 class='card-title'>Special Title Treatment</h5>
+                                                    <p class='card-text'>With supporting text below as a natural lead-in to additional content.</p>
+                                                    <a href='#' class='btn btn-primary'>Go somewhere</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class='col-lg-4 col-sm-12'>
+                                            <div class='card'>
+													<div class='card-header card-header-action'>
+														<h6>Card Header</h6>
+														<div class='d-flex align-items-center card-action-wrap'>
+															<div class='toggle toggle-simple toggle-bg-success toggle-light toggle-sm toggle-bg-primary toggle1' style='height: 20px; width: 35px;'><div class='toggle-slide'><div class='toggle-inner' style='width: 50px; margin-left: 0px;'><div class='toggle-on active' style='height: 20px; width: 25px; text-indent: -6.66667px; line-height: 20px;'></div><div class='toggle-blob' style='height: 20px; width: 20px; margin-left: -10px;'></div><div class='toggle-off' style='height: 20px; width: 25px; margin-left: -10px; text-indent: 6.66667px; line-height: 20px;'></div></div></div></div>
+														</div>
+													</div>
+                                                <div class='card-body'>
+                                                    <h5 class='card-title'>Special Title Treatment</h5>
+                                                    <p class='card-text'>With supporting text below as a natural lead-in to additional content.</p>
+                                                    <a href='#' class='btn btn-primary'>Go somewhere</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>

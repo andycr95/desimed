@@ -1,0 +1,5 @@
+<?php 
+ 
+  header("Location: resource/public/platform/modules/sesion/login.php");
+  //header("Location: resource/public/platform/modules/sesion/mantenimiento.php");
+?>

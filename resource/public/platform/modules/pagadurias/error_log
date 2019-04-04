@@ -1,0 +1,1 @@
+[14-Feb-2019 15:51:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/portalxn/public_html/credito/app/provider/entidadController.php:200) in /home1/portalxn/public_html/credito/config/session.php on line 23

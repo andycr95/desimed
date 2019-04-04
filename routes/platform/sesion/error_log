@@ -1,0 +1,25 @@
+[08-Feb-2019 11:40:28 UTC] PHP Fatal error:  Uncaught Error: Class 'sesionDao' not found in /home1/portalxn/public_html/credito/app/provider/sesionController.php:12
+Stack trace:
+#0 /home1/portalxn/public_html/credito/routes/platform/sesion/validarSesionRoute.php(9): sesionController::validarSesion('h1n1', '1')
+#1 {main}
+  thrown in /home1/portalxn/public_html/credito/app/provider/sesionController.php on line 12
+[08-Feb-2019 11:41:18 UTC] PHP Fatal error:  Uncaught Error: Class 'DataSource' not found in /home1/portalxn/public_html/credito/app/persistence/sesionDao.php:28
+Stack trace:
+#0 /home1/portalxn/public_html/credito/app/provider/sesionController.php(13): sesionDao->validarSesion('h1n1', '1')
+#1 /home1/portalxn/public_html/credito/routes/platform/sesion/validarSesionRoute.php(9): sesionController::validarSesion('h1n1', '1')
+#2 {main}
+  thrown in /home1/portalxn/public_html/credito/app/persistence/sesionDao.php on line 28
+[08-Feb-2019 11:41:19 UTC] PHP Fatal error:  Uncaught Error: Class 'DataSource' not found in /home1/portalxn/public_html/credito/app/persistence/sesionDao.php:28
+Stack trace:
+#0 /home1/portalxn/public_html/credito/app/provider/sesionController.php(13): sesionDao->validarSesion('h1n1', '1')
+#1 /home1/portalxn/public_html/credito/routes/platform/sesion/validarSesionRoute.php(9): sesionController::validarSesion('h1n1', '1')
+#2 {main}
+  thrown in /home1/portalxn/public_html/credito/app/persistence/sesionDao.php on line 28
+[06-Mar-2019 13:06:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method usuario::getNombreApellidoUsuario() in /home1/portalxn/public_html/drogasdsimed/routes/platform/sesion/validarSesionRoute.php:19
+Stack trace:
+#0 {main}
+  thrown in /home1/portalxn/public_html/drogasdsimed/routes/platform/sesion/validarSesionRoute.php on line 19
+[06-Mar-2019 13:55:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method sesion::getIdRolCategoria() in /home1/portalxn/public_html/drogasdsimed/routes/platform/sesion/validarSesionRoute.php:21
+Stack trace:
+#0 {main}
+  thrown in /home1/portalxn/public_html/drogasdsimed/routes/platform/sesion/validarSesionRoute.php on line 21

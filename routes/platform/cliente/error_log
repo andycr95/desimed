@@ -1,0 +1,95 @@
+[10-Feb-2019 08:02:55 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function cliente::__Construct(), 71 passed in /home1/portalxn/public_html/credito/routes/platform/cliente/registrarCliente.php on line 82 and exactly 76 expected in /home1/portalxn/public_html/credito/app/model/cliente.php:101
+Stack trace:
+#0 /home1/portalxn/public_html/credito/routes/platform/cliente/registrarCliente.php(82): cliente->__Construct(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#1 {main}
+  thrown in /home1/portalxn/public_html/credito/app/model/cliente.php on line 101
+[10-Feb-2019 08:03:04 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function cliente::__Construct(), 71 passed in /home1/portalxn/public_html/credito/routes/platform/cliente/registrarCliente.php on line 82 and exactly 76 expected in /home1/portalxn/public_html/credito/app/model/cliente.php:101
+Stack trace:
+#0 /home1/portalxn/public_html/credito/routes/platform/cliente/registrarCliente.php(82): cliente->__Construct(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#1 {main}
+  thrown in /home1/portalxn/public_html/credito/app/model/cliente.php on line 101
+[10-Feb-2019 08:08:51 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function cliente::__Construct(), 72 passed in /home1/portalxn/public_html/credito/routes/platform/cliente/registrarCliente.php on line 81 and exactly 76 expected in /home1/portalxn/public_html/credito/app/model/cliente.php:101
+Stack trace:
+#0 /home1/portalxn/public_html/credito/routes/platform/cliente/registrarCliente.php(81): cliente->__Construct(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#1 {main}
+  thrown in /home1/portalxn/public_html/credito/app/model/cliente.php on line 101
+[10-Feb-2019 08:11:51 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function cliente::__Construct(), 75 passed in /home1/portalxn/public_html/credito/routes/platform/cliente/registrarCliente.php on line 84 and exactly 76 expected in /home1/portalxn/public_html/credito/app/model/cliente.php:101
+Stack trace:
+#0 /home1/portalxn/public_html/credito/routes/platform/cliente/registrarCliente.php(84): cliente->__Construct(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#1 {main}
+  thrown in /home1/portalxn/public_html/credito/app/model/cliente.php on line 101
+[10-Feb-2019 08:12:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method clienteController::registrarCliente() in /home1/portalxn/public_html/credito/routes/platform/cliente/registrarCliente.php:89
+Stack trace:
+#0 {main}
+  thrown in /home1/portalxn/public_html/credito/routes/platform/cliente/registrarCliente.php on line 89
+[10-Feb-2019 08:13:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method clienteDao::crearCredito() in /home1/portalxn/public_html/credito/app/provider/clienteController.php:162
+Stack trace:
+#0 /home1/portalxn/public_html/credito/routes/platform/cliente/registrarCliente.php(89): clienteController::registrarCredito(Object(cliente))
+#1 {main}
+  thrown in /home1/portalxn/public_html/credito/app/provider/clienteController.php on line 162
+[10-Feb-2019 08:29:22 UTC] PHP Deprecated:  Non-static method clienteDao::crearCliente() should not be called statically in /home1/portalxn/public_html/credito/app/provider/clienteController.php on line 162
+[10-Feb-2019 08:29:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method cliente::getidpais_nacimiento() in /home1/portalxn/public_html/credito/app/persistence/clienteDao.php:51
+Stack trace:
+#0 /home1/portalxn/public_html/credito/app/provider/clienteController.php(162): clienteDao::crearCliente(Object(cliente))
+#1 /home1/portalxn/public_html/credito/routes/platform/cliente/registrarCliente.php(89): clienteController::registrarCredito(Object(cliente))
+#2 {main}
+  thrown in /home1/portalxn/public_html/credito/app/persistence/clienteDao.php on line 51
+[10-Feb-2019 08:29:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method cliente::getidpais_nacimiento() in /home1/portalxn/public_html/credito/app/persistence/clienteDao.php:51
+Stack trace:
+#0 /home1/portalxn/public_html/credito/app/provider/clienteController.php(162): clienteDao::crearCliente(Object(cliente))
+#1 /home1/portalxn/public_html/credito/routes/platform/cliente/registrarCliente.php(89): clienteController::registrarCredito(Object(cliente))
+#2 {main}
+  thrown in /home1/portalxn/public_html/credito/app/persistence/clienteDao.php on line 51
+[10-Feb-2019 08:30:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method cliente::getidpais_nacimiento() in /home1/portalxn/public_html/credito/app/persistence/clienteDao.php:51
+Stack trace:
+#0 /home1/portalxn/public_html/credito/app/provider/clienteController.php(162): clienteDao::crearCliente(Object(cliente))
+#1 /home1/portalxn/public_html/credito/routes/platform/cliente/registrarCliente.php(89): clienteController::registrarCredito(Object(cliente))
+#2 {main}
+  thrown in /home1/portalxn/public_html/credito/app/persistence/clienteDao.php on line 51
+[10-Feb-2019 08:31:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method cliente::getbarrio_residencia() in /home1/portalxn/public_html/credito/app/persistence/clienteDao.php:71
+Stack trace:
+#0 /home1/portalxn/public_html/credito/app/provider/clienteController.php(162): clienteDao::crearCliente(Object(cliente))
+#1 /home1/portalxn/public_html/credito/routes/platform/cliente/registrarCliente.php(89): clienteController::registrarCredito(Object(cliente))
+#2 {main}
+  thrown in /home1/portalxn/public_html/credito/app/persistence/clienteDao.php on line 71
+[10-Feb-2019 08:36:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method cliente::getidciudad_correspondecia() in /home1/portalxn/public_html/credito/app/persistence/clienteDao.php:77
+Stack trace:
+#0 /home1/portalxn/public_html/credito/app/provider/clienteController.php(162): clienteDao::crearCliente(Object(cliente))
+#1 /home1/portalxn/public_html/credito/routes/platform/cliente/registrarCliente.php(89): clienteController::registrarCredito(Object(cliente))
+#2 {main}
+  thrown in /home1/portalxn/public_html/credito/app/persistence/clienteDao.php on line 77
+[10-Feb-2019 08:37:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method cliente::getmail_conyuge() in /home1/portalxn/public_html/credito/app/persistence/clienteDao.php:93
+Stack trace:
+#0 /home1/portalxn/public_html/credito/app/provider/clienteController.php(162): clienteDao::crearCliente(Object(cliente))
+#1 /home1/portalxn/public_html/credito/routes/platform/cliente/registrarCliente.php(89): clienteController::registrarCredito(Object(cliente))
+#2 {main}
+  thrown in /home1/portalxn/public_html/credito/app/persistence/clienteDao.php on line 93
+[10-Feb-2019 08:38:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method cliente::getfecha_terminacion() in /home1/portalxn/public_html/credito/app/persistence/clienteDao.php:95
+Stack trace:
+#0 /home1/portalxn/public_html/credito/app/provider/clienteController.php(162): clienteDao::crearCliente(Object(cliente))
+#1 /home1/portalxn/public_html/credito/routes/platform/cliente/registrarCliente.php(89): clienteController::registrarCredito(Object(cliente))
+#2 {main}
+  thrown in /home1/portalxn/public_html/credito/app/persistence/clienteDao.php on line 95
+[10-Feb-2019 08:38:46 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home1/portalxn/public_html/credito/database/DataSource.php on line 69
+[10-Feb-2019 08:39:19 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home1/portalxn/public_html/credito/database/DataSource.php on line 69
+[10-Feb-2019 08:43:44 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home1/portalxn/public_html/credito/database/DataSource.php on line 69
+[10-Feb-2019 09:05:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getFechaNacimiento() in /home1/portalxn/public_html/credito/app/persistence/clienteDao.php:49
+Stack trace:
+#0 /home1/portalxn/public_html/credito/app/provider/clienteController.php(162): clienteDao::crearCliente(Object(cliente))
+#1 /home1/portalxn/public_html/credito/routes/platform/cliente/registrarCliente.php(89): clienteController::registrarCredito(Object(cliente))
+#2 {main}
+  thrown in /home1/portalxn/public_html/credito/app/persistence/clienteDao.php on line 49
+[10-Feb-2019 09:06:19 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home1/portalxn/public_html/credito/database/DataSource.php on line 69
+[10-Feb-2019 09:24:53 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home1/portalxn/public_html/credito/database/DataSource.php on line 69
+[10-Feb-2019 09:42:48 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home1/portalxn/public_html/credito/database/DataSource.php on line 69
+[10-Feb-2019 09:44:11 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home1/portalxn/public_html/credito/database/DataSource.php on line 69
+[10-Feb-2019 09:44:12 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home1/portalxn/public_html/credito/database/DataSource.php on line 69
+[10-Feb-2019 09:56:41 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home1/portalxn/public_html/credito/database/DataSource.php on line 69
+[10-Feb-2019 10:22:36 UTC] PHP Notice:  Undefined variable: id in /home1/portalxn/public_html/credito/routes/platform/cliente/registrarCliente.php on line 92
+[10-Feb-2019 10:24:09 UTC] PHP Notice:  Undefined variable: id in /home1/portalxn/public_html/credito/routes/platform/cliente/registrarCliente.php on line 91
+[10-Feb-2019 10:24:53 UTC] PHP Notice:  Undefined variable: id in /home1/portalxn/public_html/credito/routes/platform/cliente/registrarCliente.php on line 91
+[10-Feb-2019 10:24:55 UTC] PHP Notice:  Undefined variable: id in /home1/portalxn/public_html/credito/routes/platform/cliente/registrarCliente.php on line 91
+[13-Feb-2019 06:57:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function posicionFechaMysql() in /home1/portalxn/public_html/credito/routes/platform/cliente/registrarCliente.php:19
+Stack trace:
+#0 {main}
+  thrown in /home1/portalxn/public_html/credito/routes/platform/cliente/registrarCliente.php on line 19

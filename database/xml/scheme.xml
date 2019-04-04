@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- SQL XML created by WWW SQL Designer, https://github.com/ondras/wwwsqldesigner/ -->
+<!-- Active URL: https://ondras.zarovi.cz/sql/demo/?keyword=default -->
+<sql>
+<datatypes db="mysql">
+
+	<group label="Numeric" color="rgb(238,238,170)">
+
+		<type label="Integer" length="0" sql="INTEGER" quote=""/>
+
+	 	<type label="TINYINT" length="0" sql="TINYINT" quote=""/>
+
+	 	<type label="SMALLINT" length="0" sql="SMALLINT" quote=""/>
+
+	 	<type label="MEDIUMINT" length="0" sql="MEDIUMINT" quote=""/>
+
+	 	<type label="INT" length="0" sql="INT" quote=""/>
+
+		<type label="BIGINT" length="0" sql="BIGINT" quote=""/>
+
+		<type label="Decimal" length="1" sql="DECIMAL" re="DEC" quote=""/>
+
+		<type label="Single precision" length="0" sql="FLOAT" quote=""/>
+
+		<type label="Double precision" length="0" sql="DOUBLE" re="DOUBLE" quote=""/>
+
+	</group>
+
+
+
+	<group label="Character" color="rgb(255,200,200)">
+
+		<type label="Char" length="1" sql="CHAR" quote="'"/>
+
+		<type label="Varchar" length="1" sql="VARCHAR" quote="'"/>
+
+		<type label="Text" length="0" sql="MEDIUMTEXT" re="TEXT" quote="'"/>
+
+		<type label="Binary" length="1" sql="BINARY" quote="'"/>
+
+		<type label="Varbinary" length="1" sql="VARBINARY" quote="'"/>
+
+		<type label="BLOB" length="0" sql="BLOB" re="BLOB" quote="'"/>
+
+	</group>
+
+
+
+	<group label="Date &amp; Time" color="rgb(200,255,200)">
+
+		<type label="Date" length="0" sql="DATE" quote="'"/>
+
+		<type label="Time" length="0" sql="TIME" quote="'"/>
+
+		<type label="Datetime" length="0" sql="DATETIME" quote="'"/>
+
+		<type label="Year" length="0" sql="YEAR" quote=""/>
+
+		<type label="Timestamp" length="0" sql="TIMESTAMP" quote="'"/>
+
+	</group>
+
+	
+
+	<group label="Miscellaneous" color="rgb(200,200,255)">
+
+		<type label="ENUM" length="1" sql="ENUM" quote=""/>
+
+		<type label="SET" length="1" sql="SET" quote=""/>
+
+		<type label="Bit" length="0" sql="bit" quote=""/>
+
+	</group>
+
+</datatypes><table x="469" y="91" name="cliente">
+<row name="idcliente" null="1" autoincrement="1">
+<datatype>INTEGER(10)</datatype>
+<default>NULL</default></row>
+<row name="tipo_cliente" null="1" autoincrement="0">
+<datatype>INTEGER(2)</datatype>
+<default>NULL</default></row>
+<row name="idempleado" null="1" autoincrement="0">
+<datatype>INTEGER(10)</datatype>
+<default>NULL</default><relation table="empleado" row="idempleado" />
+</row>
+<row name="registro" null="1" autoincrement="0">
+<datatype>VARCHAR(30)</datatype>
+<default>NULL</default></row>
+<row name="fecha_registro" null="1" autoincrement="0">
+<datatype>DATE</datatype>
+<default>NULL</default></row>
+<row name="nombre_apellido" null="1" autoincrement="0">
+<datatype>VARCHAR(100)</datatype>
+<default>NULL</default></row>
+<row name="documento" null="1" autoincrement="0">
+<datatype>VARCHAR(30)</datatype>
+<default>NULL</default></row>
+<row name="sexo" null="1" autoincrement="0">
+<datatype>VARCHAR(20)</datatype>
+<default>NULL</default></row>
+<row name="fecha_nacimiento" null="1" autoincrement="0">
+<datatype>DATE</datatype>
+<default>NULL</default></row>
+<row name="direccion" null="1" autoincrement="0">
+<datatype>VARCHAR(20)</datatype>
+<default>NULL</default></row>
+<row name="telefono" null="1" autoincrement="0">
+<datatype>VARCHAR(15)</datatype>
+<default>NULL</default></row>
+<row name="celular" null="1" autoincrement="0">
+<datatype>VARCHAR(15)</datatype>
+<default>NULL</default></row>
+<row name="email" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="dispacidad" null="1" autoincrement="0">
+<datatype>VARCHAR(250)</datatype>
+<default>NULL</default></row>
+<row name="extracto" null="1" autoincrement="0">
+<datatype>INTEGER(2)</datatype>
+<default>NULL</default></row>
+<row name="nombre_beneficiario" null="1" autoincrement="0">
+<datatype>VARCHAR(100)</datatype>
+<default>NULL</default></row>
+<row name="sexo_beneficiario" null="1" autoincrement="0">
+<datatype>VARCHAR(50)</datatype>
+<default>NULL</default></row>
+<row name="documento_beneficiario" null="1" autoincrement="0">
+<datatype>VARCHAR(20)</datatype>
+<default>NULL</default></row>
+<row name="parentesco_beneficiario" null="1" autoincrement="0">
+<datatype>VARCHAR(30)</datatype>
+<default>NULL</default></row>
+<row name="discapacidad_beneficiario" null="1" autoincrement="0">
+<datatype>VARCHAR(10)</datatype>
+<default>NULL</default></row>
+<row name="discapacidad_desc_beneficiario" null="1" autoincrement="0">
+<datatype>VARCHAR(250)</datatype>
+<default>NULL</default></row>
+<row name="nombre_beneficiario2" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="sexo_beneficiario2" null="1" autoincrement="0">
+<datatype>VARCHAR(10)</datatype>
+<default>NULL</default></row>
+<row name="documento_beneficiario2" null="1" autoincrement="0">
+<datatype>VARCHAR(30)</datatype>
+<default>NULL</default></row>
+<row name="parentesco_beneficiario2" null="1" autoincrement="0">
+<datatype>VARCHAR(60)</datatype>
+<default>NULL</default></row>
+<row name="discapacidad_beneficiario2" null="1" autoincrement="0">
+<datatype>VARCHAR(10)</datatype>
+<default>NULL</default></row>
+<row name="discapaciadad_desc_beneficiario2" null="1" autoincrement="0">
+<datatype>VARCHAR(250)</datatype>
+<default>NULL</default></row>
+<row name="nombre_beneficiario3" null="1" autoincrement="0">
+<datatype>VARCHAR(100)</datatype>
+<default>NULL</default></row>
+<row name="sexo_beneficiario3" null="1" autoincrement="0">
+<datatype>VARCHAR(50)</datatype>
+<default>NULL</default></row>
+<row name="documento_beneficiario3" null="1" autoincrement="0">
+<datatype>VARCHAR(50)</datatype>
+<default>NULL</default></row>
+<row name="parentesco_beneficiario3" null="1" autoincrement="0">
+<datatype>VARCHAR(50)</datatype>
+<default>NULL</default></row>
+<row name="discapacidad_beneficiario3" null="1" autoincrement="0">
+<datatype>VARCHAR(250)</datatype>
+<default>NULL</default></row>
+<row name="discapacidad_desc_beneficiario3" null="1" autoincrement="0">
+<datatype>VARCHAR(300)</datatype>
+<default>NULL</default></row>
+<row name="nombre_beneficiario4" null="1" autoincrement="0">
+<datatype>VARCHAR(250)</datatype>
+<default>NULL</default></row>
+<row name="sexo_beneficiario4" null="1" autoincrement="0">
+<datatype>VARCHAR(50)</datatype>
+<default>NULL</default></row>
+<row name="documento_beneficiario4" null="1" autoincrement="0">
+<datatype>VARCHAR(50)</datatype>
+<default>NULL</default></row>
+<row name="parentesco_beneficiario4" null="1" autoincrement="0">
+<datatype>VARCHAR(50)</datatype>
+<default>NULL</default></row>
+<row name="discapacidad_beneficiario4" null="1" autoincrement="0">
+<datatype>VARCHAR(300)</datatype>
+<default>NULL</default></row>
+<row name="discapacidad_desc_beneficiario4" null="1" autoincrement="0">
+<datatype>VARCHAR(300)</datatype>
+<default>NULL</default></row>
+<row name="nombre_afiliacion" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="sexo_afiliacion" null="1" autoincrement="0">
+<datatype>VARCHAR(10)</datatype>
+<default>NULL</default></row>
+<row name="documento_afiliacion" null="1" autoincrement="0">
+<datatype>VARCHAR(30)</datatype>
+<default>NULL</default></row>
+<row name="parentesco_afiliacion" null="1" autoincrement="0">
+<datatype>VARCHAR(60)</datatype>
+<default>NULL</default></row>
+<row name="discapacidad_afiliacion" null="1" autoincrement="0">
+<datatype>VARCHAR(10)</datatype>
+<default>NULL</default></row>
+<row name="discapaciadad_desc_afiliacion" null="1" autoincrement="0">
+<datatype>VARCHAR(250)</datatype>
+<default>NULL</default></row>
+<row name="nombre_afiliacion2" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="sexo_afiliacion2" null="1" autoincrement="0">
+<datatype>VARCHAR(10)</datatype>
+<default>NULL</default></row>
+<row name="documento_afiliacion2" null="1" autoincrement="0">
+<datatype>VARCHAR(30)</datatype>
+<default>NULL</default></row>
+<row name="parentesco_afiliacion2" null="1" autoincrement="0">
+<datatype>VARCHAR(60)</datatype>
+<default>NULL</default></row>
+<row name="discapacidad_afiliacion2" null="1" autoincrement="0">
+<datatype>VARCHAR(10)</datatype>
+<default>NULL</default></row>
+<row name="discapaciadad_desc_afiliacion2" null="1" autoincrement="0">
+<datatype>VARCHAR(250)</datatype>
+<default>NULL</default></row>
+<row name="diabetes" null="1" autoincrement="0">
+<datatype>VARCHAR(2)</datatype>
+<default>NULL</default></row>
+<row name="hipertension" null="1" autoincrement="0">
+<datatype>VARCHAR(2)</datatype>
+<default>NULL</default></row>
+<row name="enf_cardiacas" null="1" autoincrement="0">
+<datatype>VARCHAR(2)</datatype>
+<default>NULL</default></row>
+<row name="estres" null="1" autoincrement="0">
+<datatype>VARCHAR(2)</datatype>
+<default>NULL</default></row>
+<row name="osteoporosis" null="1" autoincrement="0">
+<datatype>VARCHAR(2)</datatype>
+<default>NULL</default></row>
+<row name="artitis" null="1" autoincrement="0">
+<datatype>VARCHAR(2)</datatype>
+<default>NULL</default></row>
+<row name="cancer" null="1" autoincrement="0">
+<datatype>VARCHAR(2)</datatype>
+<default>NULL</default></row>
+<row name="alergias" null="1" autoincrement="0">
+<datatype>VARCHAR(2)</datatype>
+<default>NULL</default></row>
+<row name="migrana" null="1" autoincrement="0">
+<datatype>VARCHAR(2)</datatype>
+<default>NULL</default></row>
+<row name="ets" null="1" autoincrement="0">
+<datatype>VARCHAR(2)</datatype>
+<default>NULL</default></row>
+<row name="anemia" null="1" autoincrement="0">
+<datatype>VARCHAR(2)</datatype>
+<default>NULL</default></row>
+<row name="pulmonia" null="1" autoincrement="0">
+<datatype>VARCHAR(2)</datatype>
+<default>NULL</default></row>
+<row name="otras_cual" null="1" autoincrement="0">
+<datatype>VARCHAR(250)</datatype>
+<default>NULL</default></row>
+<row name="estado" null="1" autoincrement="0">
+<datatype>INTEGER(2)</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>idcliente</part>
+</key>
+</table>
+<table x="40" y="401" name="proveedor">
+<row name="idproveedor" null="1" autoincrement="1">
+<datatype>INTEGER(10)</datatype>
+<default>NULL</default></row>
+<row name="razon_social" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="etiqueta_contacto" null="1" autoincrement="0">
+<datatype>VARCHAR(250)</datatype>
+<default>NULL</default></row>
+<row name="nombre_contacto" null="1" autoincrement="0">
+<datatype>VARCHAR(100)</datatype>
+<default>NULL</default></row>
+<row name="telefono_contacto" null="1" autoincrement="0">
+<datatype>VARCHAR(50)</datatype>
+<default>NULL</default></row>
+<row name="direccion_contacto" null="1" autoincrement="0">
+<datatype>VARCHAR(100)</datatype>
+<default>NULL</default></row>
+<row name="ciudad_contacto" null="1" autoincrement="0">
+<datatype>VARCHAR(50)</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>idproveedor</part>
+</key>
+</table>
+<table x="301" y="95" name="producto">
+<row name="idproducto" null="1" autoincrement="1">
+<datatype>INTEGER(10)</datatype>
+<default>NULL</default></row>
+<row name="idproveedor" null="1" autoincrement="0">
+<datatype>INTEGER(10)</datatype>
+<default>NULL</default><relation table="proveedor" row="idproveedor" />
+</row>
+<row name="idlaboratorio" null="1" autoincrement="0">
+<datatype>INTEGER(10)</datatype>
+<default>NULL</default><relation table="laboratorio" row="idlaboratorio" />
+</row>
+<row name="idposicion" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default><relation table="posicion" row="idposicion" />
+</row>
+<row name="etiqueta_producto" null="1" autoincrement="0">
+<datatype>VARCHAR(250)</datatype>
+<default>NULL</default></row>
+<row name="descripcion" null="1" autoincrement="0">
+<datatype>VARCHAR(300)</datatype>
+<default>NULL</default></row>
+<row name="valor" null="1" autoincrement="0">
+<datatype>VARCHAR(30)</datatype>
+<default>NULL</default></row>
+<row name="descuento" null="1" autoincrement="0">
+<datatype>INTEGER(10)</datatype>
+<default>NULL</default></row>
+<row name="iva" null="1" autoincrement="0">
+<datatype>INTEGER(10)</datatype>
+<default>NULL</default></row>
+<row name="estado" null="1" autoincrement="0">
+<datatype>INTEGER(2)</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>idproducto</part>
+</key>
+</table>
+<table x="38" y="311" name="laboratorio">
+<row name="idlaboratorio" null="1" autoincrement="1">
+<datatype>INTEGER(10)</datatype>
+<default>NULL</default></row>
+<row name="etiqueta_laboratorio" null="1" autoincrement="0">
+<datatype>VARCHAR(50)</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>idlaboratorio</part>
+</key>
+</table>
+<table x="51" y="155" name="lote">
+<row name="codigo_lote" null="1" autoincrement="0">
+<datatype>INTEGER(10)</datatype>
+<default>NULL</default></row>
+<row name="idproducto" null="1" autoincrement="0">
+<datatype>INTEGER(10)</datatype>
+<default>NULL</default><relation table="producto" row="idproducto" />
+</row>
+<row name="cantidad" null="1" autoincrement="0">
+<datatype>INTEGER(10)</datatype>
+<default>NULL</default></row>
+<row name="fecha_vencimiento" null="1" autoincrement="0">
+<datatype>DATE</datatype>
+<default>NULL</default></row>
+</table>
+<table x="807" y="21" name="factura">
+<row name="idfactura" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="idcliente" null="1" autoincrement="0">
+<datatype>INTEGER(10)</datatype>
+<default>NULL</default><relation table="cliente" row="idcliente" />
+</row>
+<row name="idusuario" null="1" autoincrement="0">
+<datatype>INTEGER(10)</datatype>
+<default>NULL</default><relation table="empleado" row="idempleado" />
+</row>
+<row name="fecha_registro" null="1" autoincrement="0">
+<datatype>DATETIME</datatype>
+<default>NULL</default></row>
+<row name="valor_neto" null="1" autoincrement="0">
+<datatype>VARCHAR(30)</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>idfactura</part>
+</key>
+</table>
+<table x="796" y="180" name="empleado">
+<row name="idempleado" null="1" autoincrement="1">
+<datatype>INTEGER(10)</datatype>
+<default>NULL</default></row>
+<row name="tipo_empleado" null="1" autoincrement="0">
+<datatype>VARCHAR(50)</datatype>
+<default>NULL</default></row>
+<row name="rol_empleado" null="1" autoincrement="0">
+<datatype>VARCHAR(300)</datatype>
+<default>NULL</default></row>
+<row name="descripcion_empleado" null="1" autoincrement="0">
+<datatype>VARCHAR(500)</datatype>
+<default>NULL</default></row>
+<row name="nombre_empleado" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="documento_empleado" null="1" autoincrement="0">
+<datatype>VARCHAR(30)</datatype>
+<default>NULL</default></row>
+<row name="direccion_empleado" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="telefono_empleado" null="1" autoincrement="0">
+<datatype>VARCHAR(30)</datatype>
+<default>NULL</default></row>
+<row name="sexo_empleado" null="1" autoincrement="0">
+<datatype>VARCHAR(20)</datatype>
+<default>NULL</default></row>
+<row name="fecha_nacimiento_empleado" null="1" autoincrement="0">
+<datatype>DATE</datatype>
+<default>NULL</default></row>
+<row name="email_empleado" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="idsesion_empleado" null="1" autoincrement="0">
+<datatype>INTEGER(10)</datatype>
+<default>NULL</default><relation table="sesion" row="idsesion" />
+</row>
+<row name="estado_empleado" null="1" autoincrement="0">
+<datatype>INTEGER(2)</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>idempleado</part>
+</key>
+</table>
+<table x="1021" y="336" name="sesion">
+<row name="idsesion" null="1" autoincrement="1">
+<datatype>INTEGER(10)</datatype>
+<default>NULL</default></row>
+<row name="usuario" null="1" autoincrement="0">
+<datatype>VARCHAR(50)</datatype>
+<default>NULL</default></row>
+<row name="clave" null="1" autoincrement="0">
+<datatype>VARCHAR(50)</datatype>
+<default>NULL</default></row>
+<row name="estado" null="1" autoincrement="0">
+<datatype>INTEGER(2)</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>idsesion</part>
+</key>
+</table>
+<table x="122" y="14" name="item_factura">
+<row name="iditem" null="1" autoincrement="1">
+<datatype>INTEGER(10)</datatype>
+<default>NULL</default></row>
+<row name="idfactura" null="1" autoincrement="0">
+<datatype>INTEGER(10)</datatype>
+<default>NULL</default><relation table="factura" row="idfactura" />
+</row>
+<row name="idproducto" null="1" autoincrement="0">
+<datatype>INTEGER(10)</datatype>
+<default>NULL</default><relation table="producto" row="idproducto" />
+</row>
+<row name="cantidad_factura" null="1" autoincrement="0">
+<datatype>VARCHAR(30)</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>iditem</part>
+</key>
+</table>
+<table x="301" y="399" name="posicion">
+<row name="idposicion" null="1" autoincrement="1">
+<datatype>INT(10)</datatype>
+<default>NULL</default></row>
+<row name="etiqueta_posicion" null="1" autoincrement="0">
+<datatype>VARCHAR(300)</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>idposicion</part>
+</key>
+</table>
+</sql>

@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<?php  include_once("layout/head.php");  ?>
+
+</head>
+
+<!--TIPS-->
+<!--You may remove all ID or Class names which contain "demo-", they are only used for demonstration. -->
+
+<body>
+	<div id="container" class="effect aside-float aside-bright mainnav-lg">
+
+		<header id="navbar">
+            <div id="navbar-container" class="boxed">
+
+                <!--Brand logo & name-->
+                <!--================================-->
+                <div class="navbar-header">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="../../../../../resource/public/assets/nifty/img/logo.png" alt="Nifty Logo" class="brand-icon">
+                        <div class="brand-title">
+                            <span class="brand-text">Plataforma</span>
+                        </div>
+                    </a>
+                </div>
+                <!--================================-->
+                <!--End brand logo & name-->
+
+
+                <!--Navbar Dropdown-->
+                <!--================================-->
+                <div class="navbar-content">
+                    <ul class="nav navbar-top-links">
+
+                        <!--Navigation toogle button-->
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <li class="tgl-menu-btn">
+                            <a class="mainnav-toggle" href="#">
+                                <i class="demo-pli-list-view"></i>
+                            </a>
+                        </li>
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <!--End Navigation toogle button-->
+
+
+
+                        
+
+                    </ul>
+                    <ul class="nav navbar-top-links">
+
+
+
+
+                        <!--User dropdown-->
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <li id="dropdown-user" class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle text-right">
+                                <span class="ic-user pull-right">
+                                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                    <!--You can use an image instead of an icon.-->
+                                    <!--<img class="img-circle img-user media-object" src="img/profile-photos/1.png" alt="Profile Picture">-->
+                                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                    <i class="demo-pli-male"></i>
+                                </span>
+                                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                <!--You can also display a user name in the navbar.-->
+                                <!--<div class="username hidden-xs">Aaron Chavez</div>-->
+                                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            </a>
+
+
+                            <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right panel-default">
+                                <ul class="head-list">
+                                    <li>
+                                        <a href="#" id="vRouteTitle" 
+										 title="vPerfil">><i class="demo-pli-male icon-lg icon-fw"></i> Perfil</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" id="vRouteTitle"
+										  title="vConfiguracion"><i class="demo-pli-gear icon-lg icon-fw"></i> configuracion</a>
+                                    </li>
+                                    <li><a href="#"  
+										   id="vRouteTitle"
+										   title="vAyuda">
+                                            <i class="demo-pli-information icon-lg icon-fw"></i>Ayuda
+                                        </a></li>
+                                    <li>
+                                        <a href="#" id="vRouteTitle"
+										title="aCerraSesion"><i class="demo-pli-unlock icon-lg icon-fw"></i> Cerrar sesion</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <!--End user dropdown-->
+
+                    
+                    </ul>
+                </div>
+                <!--================================-->
+                <!--End Navbar Dropdown-->
+
+            </div>
+        </header>
+
+		<div class="boxed">
+
+			<!--CONTENT CONTAINER-->
+			<!--===================================================-->
+			<div id="content-container">
+            <h3>hola</h3>
+
+			
+
+			
+			</div>
+			<!--===================================================-->
+			<!--END CONTENT CONTAINER-->
+
+
+
+			<!--ASIDE-->
+			<!--===================================================-->
+			
+			<!--===================================================-->
+			<!--END ASIDE-->
+
+
+			<!--MAIN NAVIGATION-->
+			<!--===================================================-->
+
+			<?php  include_once("layout/asideprofile/asideprofile.php");  ?>
+			<!--===================================================-->
+			<!--END MAIN NAVIGATION-->
+			<!--===================================================-->
+
+
+		</div>
+
+
+
+		<!-- FOOTER -->
+		<!--===================================================-->
+		<footer id="footer">
+
+			<!-- Visible when footer positions are fixed -->
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<div class="show-fixed pad-rgt pull-right">
+				You have <a href="#" class="text-main"><span class="badge badge-danger">3</span> pending action.</a>
+			</div>
+
+
+
+			<!-- Visible when footer positions are static -->
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<div class="hide-fixed pull-right pad-rgt">
+				14GB of <strong>512GB</strong> Free.
+			</div>
+
+
+
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<!-- Remove the class "show-fixed" and "hide-fixed" to make the content always appears. -->
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+			<p class="pad-lft">&#0169; 2017 Your Company</p>
+
+
+
+		</footer>
+		<!--===================================================-->
+		<!-- END FOOTER -->
+
+
+		<!-- SCROLL PAGE BUTTON -->
+		<!--===================================================-->
+		<button class="scroll-top btn">
+			<i class="pci-chevron chevron-up"></i>
+		</button>
+		<!--===================================================-->
+
+
+
+	</div>
+	<!--===================================================-->
+	<!-- END OF CONTAINER -->
+
+
+
+
+
+
+
+	<?php  include_once("layout/footer.php");  ?>
+	<script src="../../../../../resource/public/assets/cooservipress/routePlatform.js"></script>
+</body>
+
+</html>
