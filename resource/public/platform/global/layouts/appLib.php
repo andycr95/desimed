@@ -29,14 +29,14 @@
 <!-- Daterangepicker JavaScript -->
 <script src="<?php echo  "//".VENDOR_SERVER.'plugins/moment/min/moment.min.js'; ?>"></script>
 <script src="<?php echo  "//".VENDOR_SERVER.'plugins/daterangepicker/daterangepicker.js'; ?>"></script>
-<!-- <script src="<?php echo  VENDOR_SERVER.'dist_pangong/js/daterangepicker-data.js'; ?>"></script> -->
+<!-- <script src="<?php // echo  VENDOR_SERVER.'dist_pangong/js/daterangepicker-data.js'; ?>"></script> -->
 
 <!-- Bootstrap Input spinner JavaScript -->
 <script src="<?php echo  "//".VENDOR_SERVER.'plugins/bootstrap-input-spinner/src/bootstrap-input-spinner.js'; ?>"></script>
 
 <!-- Form Wizard JavaScript -->
 <script src="<?php echo  "//".VENDOR_SERVER.'plugins/jquery-steps/build/jquery.steps.min.js'; ?>"></script>
-<script src="<?php echo  "//".VENDOR_SERVER.'dist_pangong/js/form-wizard-data.js'; ?>"></script>
+<script src="<?php  // echo  "//".VENDOR_SERVER.'dist_pangong/js/form-wizard-data.js'; ?>"></script>
 
 
 <!-- FeatherIcons JavaScript -->

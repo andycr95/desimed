@@ -1,5 +1,5 @@
 <?php session_start();
-include_once($_SERVER['DOCUMENT_ROOT'].'/conf.php');
+include_once($_SERVER['DOCUMENT_ROOT'].'/desimed/conf.php');
 include_once(PROVIDER_PATH."sesionController.php");
 include_once(PROVIDER_PATH."empleadoController.php");
   /* Ruta del archivo de sesion*/
@@ -595,11 +595,11 @@ include_once(PROVIDER_PATH."empleadoController.php");
     <!-- /HK Wrapper -->
     <!-- App Libs -->
     <?php  include_once("../../global/layouts/appLib.php");  ?>
-    <script src="<?php echo JS_SERVER.'cliente/form-wizard-data_afiliados.js'; ?>"></script>
-    <script src="<?php echo JS_SERVER.'directory.js';  ?>"></script>
-    <script src="<?php echo JS_SERVER.'app.js';  ?>"></script>
-    <script src="<?php echo JS_SERVER.'cliente/module.js';  ?>"></script>
-    <script src="<?php echo DIST_PANGONG_SERVER.'js/daterangepicker-data.js';  ?>"></script>
+    <script src="<?php echo "//".JS_SERVER.'cliente/form-wizard-data_afiliados.js'; ?>"></script>
+    <script src="<?php echo "//".JS_SERVER.'directory.js';  ?>"></script>
+    <script src="<?php echo "//".JS_SERVER.'app.js';  ?>"></script>
+    <script src="<?php echo "//".JS_SERVER.'cliente/module.js';  ?>"></script>
+    <script src="<?php echo "//".DIST_PANGONG_SERVER.'js/daterangepicker-data.js';  ?>"></script>
     <!-- /App Libs -->
 </body>
 

@@ -109,13 +109,13 @@
                                         <div class="form-inline">
                                             <div class="form-row align-items-center">
                                                 <div class="col-auto">
-                                                    <a href="<?php echo  PLATFORM_SERVER."modules/clientes/agregar.php";
+                                                    <a href="<?php echo  "//".PLATFORM_SERVER."modules/clientes/agregar.php";
                                                         ?>" target="_self" class="btn btn-gradient-info mb-2 btn-sm"><i
                                                             class="fa fa-user-plus "></i> Crear
                                                         nuevo cliente </a>
                                                 </div>
                                                 <div class="col-auto">
-                                                    <a href="<?php echo  PLATFORM_SERVER."modules/clientes/agregarAfiliado.php";
+                                                    <a href="<?php echo  "//".PLATFORM_SERVER."modules/clientes/agregarAfiliado.php";
                                                         ?>" target="_self" class="btn btn-gradient-info mb-2 btn-sm"><i
                                                             class="fa fa-address-card "></i> Crear
                                                         nuevo afiliado </a>
@@ -142,9 +142,9 @@
     <!-- /HK Wrapper -->
     <!-- App Libs -->
     <?php  include_once("../../global/layouts/appLib.php");  ?>
-    <script src="<?php echo JS_SERVER.'directory.js';  ?>"></script>
-    <script src="<?php echo JS_SERVER.'app.js';  ?>"></script>
-    <script src="<?php echo JS_SERVER.'cliente/module.js';  ?>"></script>
+    <script src="<?php echo "//".JS_SERVER.'directory.js';  ?>"></script>
+    <script src="<?php echo "//".JS_SERVER.'app.js';  ?>"></script>
+    <script src="<?php echo "//".JS_SERVER.'cliente/module.js';  ?>"></script>
     <!-- /App Libs -->
 </body>
 </html>
