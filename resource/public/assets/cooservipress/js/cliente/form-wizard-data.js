@@ -15,11 +15,18 @@ $(function () {
 				pagination: "Paginacion",
 				finish: "Registrar cliente",
 				next: "Siguiente",
-				previous: "Anterior",
 				loading: "Cargando ..."
 			},
 			onFinished: function (event, currentIndex) {
-				registrarCliente();              
+				registrarCliente();      
+				document.getElementsByName('nombre_apellido')[0].value = ""   
+   				document.getElementsByName('documento')[0].value = ""
+   				document.getElementsByName('fecha_nacimiento')[0].value = ""
+   				document.getElementsByName('sexo')[0].value = ""
+   				document.getElementsByName('direccion')[0].value = ""
+   				document.getElementsByName('telefono')[0].value = ""
+   				document.getElementsByName('celular')[0].value = ""
+   				document.getElementsByName('email')[0].value = "" 
 			}
         });
         

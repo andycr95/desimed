@@ -62,29 +62,25 @@ include_once(PROVIDER_PATH."empleadoController.php");
                                     <div class="col-xl-12 mb-20">
                                         <form>
                                             <div class="row">
-                                                <div class="col-md-2 form-group">
-                                                    <label for="">Referencia</label>
-                                                    <input class="form-control" id="referencia_cliente" name="referencia_cliente"
-                                                        placeholder="referencia . . ." value="" type="text">
+                                            <div class="col-md-4 form-group">
+                                                    <label for="nombre_apellido">Nombre completo</label>
+                                                    <input class="form-control" id="nombre_apellido" name="nombre_apellido"
+                                                        placeholder="nombre . . ." value="" type="text">
                                                 </div>
                                                 <div class="col-md-4 form-group">
                                                     <label for='country'>Asesora:</label>
                                                     <?php empleadoController::selectAsesoras(); ?>
                                                 </div>
-                                                <div class="col-md-4 form-group">
-                                                    <label for="nombre_apellido_cliente">Nombre completo</label>
-                                                    <input class="form-control" id="nombre_apellido_cliente" name="nombre_apellido_cliente"
-                                                        placeholder="nombre . . ." value="" type="text">
-                                                </div>
+                                                
                                                 <div class="col-md-2 form-group">
-                                                    <label for="documento_cliente">Documento </label>
-                                                    <input class="form-control" id="documento_cliente" name="documento_cliente"
+                                                    <label for="documento">Documento </label>
+                                                    <input class="form-control" id="documento" name="documento"
                                                         placeholder="documento. . ." value="" type="text">
                                                 </div>
                                                 <div class="col-md-2 form-group">
                                                     <label for='country'>Genero:</label>
-                                                    <select class='form-control custom-select d-block w-100' name="genero"
-                                                        id='genero'>
+                                                    <select class='form-control custom-select d-block w-100' name="sexo"
+                                                        id='sexo'>
                                                         <option selected>Elige un tipo...</option>
                                                         <option value="Masculino">Masculino</option>
                                                         <option value="Femenino">Femenino</option>
@@ -92,7 +88,7 @@ include_once(PROVIDER_PATH."empleadoController.php");
                                                 </div>
                                                 <div class="col-md-2 form-group">
                                                     <label for="">Fecha de nacimiento</label>
-                                                    <input class="form-control" id="fecha" name="fecha" value="" type="text">
+                                                    <input class="form-control" id="fecha_nacimiento" name="fecha_nacimiento" value="" type="text">
                                                 </div>
                                                 <div class="col-md-5 form-group">
                                                     <label for="">Direccion </label>
@@ -123,13 +119,13 @@ include_once(PROVIDER_PATH."empleadoController.php");
                                                 </div>
                                                 <div class="col-md-6 form-group">
                                                     <label for="">E-mail</label>
-                                                    <input class="form-control" id="mail" name="mail" placeholder="E-mail. . ."
+                                                    <input class="form-control" id="email" name="email" placeholder="E-mail. . ."
                                                         value="" type="text">
                                                 </div>
                                                 <div class="col-md-12 form-group">
                                                     <label for='country'>Discapacidad 'Descripcion':</label>
-                                                    <textarea class="form-control mt-15" rows="5" cols="25" id="descripcion"
-                                                        name="descripcion" placeholder="descripcion"></textarea>
+                                                    <textarea class="form-control mt-15" rows="5" cols="25" id="discapacidad"
+                                                        name="discapacidad" placeholder="descripcion"></textarea>
                                                 </div>
 
 
@@ -156,12 +152,12 @@ include_once(PROVIDER_PATH."empleadoController.php");
                                             <div class="row">
                                                 <div class="col-md-3 form-group">
                                                     <label for="">Nombre Beneficiario #1</label>
-                                                    <input class="form-control" id="nombre_beneficiario1" name="nombre_beneficiario1"
+                                                    <input class="form-control" id="nombre_beneficiario" name="nombre_beneficiario"
                                                         placeholder="nombre . . ." value="" type="text">
                                                 </div>
                                                 <div class="col-md-2 form-group">
                                                     <label for="">sexo beneficiario</label>
-                                                    <select class='form-control custom-select d-block w-100' name="sexo_beneficiario1"
+                                                    <select class='form-control custom-select d-block w-100' name="sexo_beneficiario"
                                                         id='extracto'>
                                                         <option value="MASCULINO">MASCULINO</option>
                                                         <option value="FEMENINO">FEMENINO</option>
@@ -169,22 +165,22 @@ include_once(PROVIDER_PATH."empleadoController.php");
                                                 </div>
                                                 <div class="col-md-3 form-group">
                                                     <label for="">Documento beneficiario</label>
-                                                    <input class="form-control" id="documento_beneficiario1" name="documento_beneficiario1"
+                                                    <input class="form-control" id="documento_beneficiario" name="documento_beneficiario"
                                                         placeholder="nombre . . ." value="" type="text">
                                                 </div>
                                                 <div class="col-md-4 form-group">
                                                     <label for="">parentesco beneficiario</label>
-                                                    <input class="form-control" id="parentesco_beneficiario1" name="parentesco_beneficiario1"
+                                                    <input class="form-control" id="parentesco_beneficiario" name="parentesco_beneficiario"
                                                         placeholder="parentesco . . ." value="" type="text">
                                                 </div>
                                                 <div class="col-md-4 form-group">
                                                     <label for="">Discapacidad beneficiario</label>
-                                                    <input class="form-control" id="discapacidad_beneficiario1" name="discapacidad_beneficiario1"
+                                                    <input class="form-control" id="discapacidad_beneficiario" name="discapacidad_beneficiario"
                                                         placeholder="discapacidad . . ." value="" type="text">
                                                 </div>
                                                 <div class="col-md-5 form-group">
                                                     <label for="">Descripcion de discapacidad</label>
-                                                    <input class="form-control" id="descripcion_discapacidad" name="descripcion_discapacidad"
+                                                    <input class="form-control" id="discapacidad_desc_beneficiario" name="discapacidad_desc_beneficiario"
                                                         placeholder="descripcion . . ." value="" type="text">
                                                 </div>
 
@@ -225,7 +221,7 @@ include_once(PROVIDER_PATH."empleadoController.php");
                                                 </div>
                                                 <div class="col-md-5 form-group">
                                                     <label for="">Descripcion de discapacidad</label>
-                                                    <input class="form-control" id="descripcion_discapacidad2" name="descripcion_discapacidad2"
+                                                    <input class="form-control" id="discapacidad_desc_beneficiario2" name="discapacidad_desc_beneficiario2"
                                                         placeholder="descripcion . . ." value="" type="text">
                                                 </div>
 
@@ -266,7 +262,7 @@ include_once(PROVIDER_PATH."empleadoController.php");
                                                 </div>
                                                 <div class="col-md-5 form-group">
                                                     <label for="">Descripcion de discapacidad</label>
-                                                    <input class="form-control" id="descripcion_discapacidad3" name="descripcion_discapacidad3"
+                                                    <input class="form-control" id="discapacidad_desc_beneficiario3" name="discapacidad_desc_beneficiario3"
                                                         placeholder="descripcion . . ." value="" type="text">
                                                 </div>
 
@@ -307,7 +303,7 @@ include_once(PROVIDER_PATH."empleadoController.php");
                                                 </div>
                                                 <div class="col-md-5 form-group">
                                                     <label for="">Descripcion de discapacidad</label>
-                                                    <input class="form-control" id="descripcion_discapacidad4" name="descripcion_discapacidad4"
+                                                    <input class="form-control" id="discapacidad_desc_beneficiario4" name="discapacidad_desc_beneficiario4"
                                                         placeholder="descripcion . . ." value="" type="text">
                                                 </div>
 
@@ -337,12 +333,12 @@ include_once(PROVIDER_PATH."empleadoController.php");
                                             <div class="row">
                                                 <div class="col-md-3 form-group">
                                                     <label for="">Nombre Afiliado #1</label>
-                                                    <input class="form-control" id="nombre_Afiliado1" name="nombre_Afiliado1"
+                                                    <input class="form-control" id="nombre_afiliacion" name="nombre_afiliacion"
                                                         placeholder="nombre . . ." value="" type="text">
                                                 </div>
                                                 <div class="col-md-2 form-group">
                                                     <label for="">sexo Afiliado</label>
-                                                    <select class='form-control custom-select d-block w-100' name="sexo_Afiliado1"
+                                                    <select class='form-control custom-select d-block w-100' name="sexo_afiliacion"
                                                         id='extracto'>
                                                         <option value="MASCULINO">MASCULINO</option>
                                                         <option value="FEMENINO">FEMENINO</option>
@@ -350,22 +346,22 @@ include_once(PROVIDER_PATH."empleadoController.php");
                                                 </div>
                                                 <div class="col-md-3 form-group">
                                                     <label for="">Documento Afiliado</label>
-                                                    <input class="form-control" id="documento_Afiliado1" name="documento_Afiliado1"
+                                                    <input class="form-control" id="documento_afiliacion" name="documento_afiliacion"
                                                         placeholder="nombre . . ." value="" type="text">
                                                 </div>
                                                 <div class="col-md-4 form-group">
                                                     <label for="">parentesco Afiliado</label>
-                                                    <input class="form-control" id="parentesco_Afiliado1" name="parentesco_Afiliado1"
+                                                    <input class="form-control" id="parentesco_afiliacion" name="parentesco_afiliacion"
                                                         placeholder="parentesco . . ." value="" type="text">
                                                 </div>
                                                 <div class="col-md-4 form-group">
                                                     <label for="">Discapacidad Afiliado</label>
-                                                    <input class="form-control" id="discapacidad_Afiliado1" name="discapacidad_Afiliado1"
+                                                    <input class="form-control" id="discapacidad_afiliacion" name="discapacidad_afiliacion"
                                                         placeholder="discapacidad . . ." value="" type="text">
                                                 </div>
                                                 <div class="col-md-5 form-group">
                                                     <label for="">Descripcion de discapacidad</label>
-                                                    <input class="form-control" id="descripcion_discapacidad" name="descripcion_discapacidad"
+                                                    <input class="form-control" id="discapacidad_desc_afiliacion" name="discapacidad_desc_afiliacion"
                                                         placeholder="descripcion . . ." value="" type="text">
                                                 </div>
 
@@ -378,35 +374,35 @@ include_once(PROVIDER_PATH."empleadoController.php");
                                             <div class="row">
                                                 <div class="col-md-3 form-group">
                                                     <label for="">Nombre Afiliado #2</label>
-                                                    <input class="form-control" id="nombre_Afiliado2" name="nombre_Afiliado2"
+                                                    <input class="form-control" id="nombre_afiliacion2" name="nombre_afiliacion2"
                                                         placeholder="nombre . . ." value="" type="text">
                                                 </div>
                                                 <div class="col-md-2 form-group">
                                                     <label for="">sexo Afiliado</label>
-                                                    <select class='form-control custom-select d-block w-100' name="sexo_Afiliado2"
-                                                        id='sexo_Afiliado2'>
+                                                    <select class='form-control custom-select d-block w-100' name="sexo_afiliacion2"
+                                                        id='sexo_afiliacion2'>
                                                         <option value="MASCULINO">MASCULINO</option>
                                                         <option value="FEMENINO">FEMENINO</option>
                                                     </select>
                                                 </div>
                                                 <div class="col-md-3 form-group">
                                                     <label for="">Documento Afiliado</label>
-                                                    <input class="form-control" id="documento_Afiliado2" name="documento_Afiliado2"
+                                                    <input class="form-control" id="documento_afiliacion2" name="documento_afiliacion2"
                                                         placeholder="nombre . . ." value="" type="text">
                                                 </div>
                                                 <div class="col-md-4 form-group">
                                                     <label for="">parentesco Afiliado</label>
-                                                    <input class="form-control" id="parentesco_Afiliado2" name="parentesco_Afiliado2"
+                                                    <input class="form-control" id="parentesco_afiliacion2" name="parentesco_afiliacion2"
                                                         placeholder="parentesco . . ." value="" type="text">
                                                 </div>
                                                 <div class="col-md-4 form-group">
                                                     <label for="">Discapacidad Afiliado</label>
-                                                    <input class="form-control" id="discapacidad_Afiliado2" name="discapacidad_Afiliado2"
+                                                    <input class="form-control" id="discapacidad_afiliacion2" name="discapacidad_afiliacion2"
                                                         placeholder="discapacidad . . ." value="" type="text">
                                                 </div>
                                                 <div class="col-md-5 form-group">
                                                     <label for="">Descripcion de discapacidad</label>
-                                                    <input class="form-control" id="descripcion_discapacidad2" name="descripcion_discapacidad2"
+                                                    <input class="form-control" id="discapacidad_desc_afiliacion2" name="discapacidad_desc_afiliacion2"
                                                         placeholder="descripcion . . ." value="" type="text">
                                                 </div>
 
@@ -431,8 +427,8 @@ include_once(PROVIDER_PATH."empleadoController.php");
                                             <div class="row">
                                                 <div class="col-md-2 form-group">
                                                     <label for=''>Hipertension:</label>
-                                                    <select class='form-control custom-select d-block w-100' name="Hipertension"
-                                                        id='Hipertension'>
+                                                    <select class='form-control custom-select d-block w-100' name="hipertension"
+                                                        id='hipertension'>
                                                         <option value="NO">No</option>
                                                         <option value="SI">Si</option>
 
@@ -448,8 +444,8 @@ include_once(PROVIDER_PATH."empleadoController.php");
                                                 </div>
                                                 <div class="col-md-2 form-group">
                                                     <label for=''>Enfer cardiacas:</label>
-                                                    <select class='form-control custom-select d-block w-100' name="cardiacas"
-                                                        id='cardiacas'>
+                                                    <select class='form-control custom-select d-block w-100' name="enf_cardiacas"
+                                                        id='enf_cardiacas'>
                                                         <option value="NO">No</option>
                                                         <option value="SI">Si</option>
                                                     </select>
@@ -472,8 +468,8 @@ include_once(PROVIDER_PATH."empleadoController.php");
                                                 </div>
                                                 <div class="col-md-2 form-group">
                                                     <label for=''>Artitris:</label>
-                                                    <select class='form-control custom-select d-block w-100' name="artritis"
-                                                        id='artritis'>
+                                                    <select class='form-control custom-select d-block w-100' name="artitis"
+                                                        id='artitis'>
                                                         <option value="NO">No</option>
                                                         <option value="SI">Si</option>
                                                     </select>
@@ -512,8 +508,8 @@ include_once(PROVIDER_PATH."empleadoController.php");
                                                 </div>
                                                 <div class="col-md-2 form-group">
                                                     <label for=''>Anemia:</label>
-                                                    <select class='form-control custom-select d-block w-100' name="Anemia"
-                                                        id='Anemia'>
+                                                    <select class='form-control custom-select d-block w-100' name="anemia"
+                                                        id='anemia'>
                                                         <option value="NO">No</option>
                                                         <option value="SI">Si</option>
                                                     </select>
@@ -526,7 +522,11 @@ include_once(PROVIDER_PATH."empleadoController.php");
                                                         <option value="SI">Si</option>
                                                     </select>
                                                 </div>
-
+                                                <div class="col-md-3 form-group">
+                                                    <label for="">Otras, cual?</label>
+                                                    <input class="form-control" id="otras_cual" name="otras_cual"
+                                                        placeholder="nombre . . ." value="" type="text">
+                                                </div>
 
                                             </div>
 

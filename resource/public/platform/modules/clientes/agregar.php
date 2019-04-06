@@ -50,7 +50,7 @@ include_once(PROVIDER_PATH."sesionController.php");
                             <h3>
                                 <span class="wizard-icon-wrap"><i class="fa fa-user"></i></span>
                                 <span class="wizard-head-text-wrap">
-                                    <span class="step-head">Informacion  de contacto</span>
+                                    <span class="step-head">Registro de usuario</span>
                                 </span>
                             </h3>
                             <section>
@@ -59,19 +59,19 @@ include_once(PROVIDER_PATH."sesionController.php");
                                         <form>
                                             <div class="row">
                                                 <div class="col-md-4 form-group">
-                                                    <label for="nombre_apellido_cliente">Nombre completo</label>
-                                                    <input class="form-control" id="nombre_apellido_cliente" name="nombre_apellido_cliente"
+                                                    <label for="nombre_apellido">Nombre completo</label>
+                                                    <input class="form-control" id="nombre_apellido" name="nombre_apellido"
                                                         placeholder="nombre . . ." value="" type="text">
                                                 </div>
                                                 <div class="col-md-3 form-group">
-                                                    <label for="documento_cliente">Documento de identificacion</label>
-                                                    <input class="form-control" id="documento_cliente" name="documento_cliente"
+                                                    <label for="documento">Documento de identificacion</label>
+                                                    <input class="form-control" id="documento" name="documento"
                                                         placeholder="documento. . ." value="" type="text">
                                                 </div>
                                                 <div class="col-md-2 form-group">
                                                     <label for='country'>Genero:</label>
-                                                    <select class='form-control custom-select d-block w-100' name="genero"
-                                                        id='genero'>
+                                                    <select class='form-control custom-select d-block w-100' name="sexo"
+                                                        id='sexo'>
                                                         <option selected>Elige un tipo...</option>
                                                         <option value="Masculino">Masculino</option>
                                                         <option value="Femenino">Femenino</option>
@@ -79,8 +79,8 @@ include_once(PROVIDER_PATH."sesionController.php");
                                                 </div>
                                                 <div class="col-md-3 form-group">
                                                     <label for="">Fecha de nacimiento</label>
-                                                    <input class="form-control" id="fecha" name="fecha"
-                                                       value="" type="text">
+                                                    <input class="form-control" id="fecha_nacimiento" name="fecha_nacimiento"
+                                                       value="" type="date">
                                                 </div>
                                                 <div class="col-md-3 form-group">
                                                     <label for="">Direccion </label>
@@ -99,24 +99,18 @@ include_once(PROVIDER_PATH."sesionController.php");
                                                 </div>
                                                 <div class="col-md-3 form-group">
                                                     <label for="">E-mail</label>
-                                                    <input class="form-control" id="mail" name="mail"
+                                                    <input class="form-control" id="email" name="email"
                                                         placeholder="E-mail. . ." value="" type="text">
                                                 </div>
-                                                
-                                               
                                             </div>
                                             
                                         </form>
                                     </div>
                                 </div>
                             </section>
-                            <!-------------------------------------------------------->
-
-                            
                         </div>
                         <div id="resultado"></div>
                     </div>
-                   
                 </div>
                 <!-- /Row -->
             </div>

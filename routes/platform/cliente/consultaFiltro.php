@@ -5,6 +5,6 @@
   
   /* Rutas del directorio de controller */
   require_once(PROVIDER_PATH."clienteController.php");
-  clienteController::listaCliente($_POST['consulta'],$_POST['estado'],$_POST['busqueda']);
+  clienteController::listadoCliente($_POST['consulta'],$_POST['estado'],$_POST['busqueda']);
  
  ?>

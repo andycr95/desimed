@@ -137,7 +137,7 @@ class cliente {
    $estado) {
        $this->idcliente = $idcliente;
        $this->tipo_cliente = $tipo_cliente;
-       $this->idasesor = $idempleado;
+       $this->idempleado = $idempleado;
        $this->registro = $registro;
        $this->migrana = $migrana;
        $this->fecha_registro = $fecha_registro;
@@ -210,8 +210,8 @@ class cliente {
        return $this->tipo_cliente;
    }
 
-   public function getIdasesor() {
-       return $this->idasesor;
+   public function getIdempleado() {
+       return $this->idempleado;
    }
 
    public function getRegistro() {
@@ -438,6 +438,10 @@ class cliente {
        return $this->alergias;
    }
 
+   public function getMigrana() {
+    return $this->migrana;
+}
+
    public function getEts() {
        return $this->ets;
    }
@@ -468,8 +472,8 @@ class cliente {
        return $this;
    }
 
-   public function setIdasesor($idasesor) {
-       $this->idasesor = $idasesor;
+   public function setIdempleado($idempleado) {
+       $this->$idempleado = $idempleado;
        return $this;
    }
 
@@ -752,6 +756,11 @@ class cliente {
        $this->alergias = $alergias;
        return $this;
    }
+
+   public function setMigrana($migrana) {
+    $this->migrana = $migrana;
+    return $this;
+}
 
    public function setEts($ets) {
        $this->ets = $ets;
