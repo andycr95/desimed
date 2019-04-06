@@ -40,10 +40,10 @@ function registrarCliente(){
        "documento_cliente" : document.getElementsByName("documento_cliente")[0].value,
        "fecha" : document.getElementsByName("fecha")[0].value,
        "genero" : document.getElementsByName("genero")[0].value,
-       "mail" : document.getElementsByName("mail")[0].value,
+       "direccion" : document.getElementsByName("direccion")[0].value,
        "telefono_fijo_cliente" : document.getElementsByName("telefono")[0].value,
        "telefono_personal_cliente" : document.getElementsByName("celular")[0].value,
-       "direccion" : document.getElementsByName("direccion")[0].value
+       "mail" : document.getElementsByName("mail")[0].value,
     },'#resultado');  
      return false;
     

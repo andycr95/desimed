@@ -90,7 +90,7 @@
                                             <input type="text" class="form-control w-70" placeholder="Buscar ..." id="busqueda"
                                                 name="busqueda">
                                             <div class="input-group-append">
-                                                <button class="btn btn-gradient-info" type="button" id="buscarCliente">Buscar</button>
+                                                <button class="btn btn-gradient-info" type="button" id="buscarProveedor">Buscar</button>
                                             </div>
                                         </div>
                                     </div>
@@ -138,9 +138,9 @@
     <!-- /HK Wrapper -->
     <!-- App Libs -->
     <?php  include_once("../../global/layouts/appLib.php");  ?>
-    <script src="<?php echo JS_SERVER.'directory.js';  ?>"></script>
-    <script src="<?php echo JS_SERVER.'app.js';  ?>"></script>
-    <script src="<?php echo JS_SERVER.'proveedores/module.js';  ?>"></script>
+    <script src="<?php echo "//".JS_SERVER.'directory.js';  ?>"></script>
+    <script src="<?php echo "//".JS_SERVER.'app.js';  ?>"></script>
+    <script src="<?php echo "//".JS_SERVER.'proveedor/module.js';  ?>"></script>
     <!-- /App Libs -->
 </body>
 </html>

@@ -140,9 +140,9 @@
     <!-- /HK Wrapper -->
     <!-- App Libs -->
     <?php  include_once("../../global/layouts/appLib.php");  ?>
-    <script src="<?php echo JS_SERVER.'directory.js';  ?>"></script>
-    <script src="<?php echo JS_SERVER.'app.js';  ?>"></script>
-    <script src="<?php echo JS_SERVER.'cliente/module.js';  ?>"></script>
+    <script src="<?php echo "//".JS_SERVER.'directory.js';  ?>"></script>
+    <script src="<?php echo "//".JS_SERVER.'app.js';  ?>"></script>
+    <script src="<?php echo "//".JS_SERVER.'cliente/module.js';  ?>"></script>
     <!-- /App Libs -->
 </body>
 </html>
