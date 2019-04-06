@@ -43,7 +43,7 @@ function registrarCliente(){
        "mail" : document.getElementsByName("mail")[0].value,
        "telefono_fijo_cliente" : document.getElementsByName("telefono")[0].value,
        "telefono_personal_cliente" : document.getElementsByName("celular")[0].value,
-       "direccion" : document.getElementsByName("direccion")[0].value,
+       "direccion" : document.getElementsByName("direccion")[0].value
     },'#resultado');  
      return false;
     

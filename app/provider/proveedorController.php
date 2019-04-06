@@ -16,7 +16,6 @@ class proveedorController
 
 
     public static function listaproveedores(){   
-    if(strlen(trim($busqueda))==0){ $busqueda=null;  }
     $arrayproveedores = proveedorDao::listaproveedores();
     if($arrayproveedores != false){
       echo "<div class='table-responsive'>

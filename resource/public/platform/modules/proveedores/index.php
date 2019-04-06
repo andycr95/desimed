@@ -110,7 +110,7 @@
                                         <div class="form-inline">
                                             <div class="form-row align-items-center">
                                                 <div class="col-auto">
-                                                    <a href="<?php echo  PLATFORM_SERVER."modules/proveedores/agregar.php";
+                                                    <a href="<?php echo "//".PLATFORM_SERVER."modules/proveedores/agregar.php";
                                                         ?>" target="_self" class="btn btn-gradient-info mb-2 btn-sm"><i
                                                             class="fa fa-user-plus "></i> Crear
                                                         nuevo Proveedor calificado </a>

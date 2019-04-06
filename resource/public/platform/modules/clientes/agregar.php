@@ -130,11 +130,11 @@ include_once(PROVIDER_PATH."sesionController.php");
     <!-- /HK Wrapper -->
     <!-- App Libs -->
     <?php  include_once("../../global/layouts/appLib.php");  ?>
-    <script src="<?php echo JS_SERVER.'cliente/form-wizard-data.js'; ?>"></script>
-    <script src="<?php echo JS_SERVER.'directory.js';  ?>"></script>
-    <script src="<?php echo JS_SERVER.'app.js';  ?>"></script>
-    <script src="<?php echo JS_SERVER.'cliente/module.js';  ?>"></script>
-    <script src="<?php echo DIST_PANGONG_SERVER.'js/daterangepicker-data.js';  ?>"></script>
+    <script src="<?php echo "//".JS_SERVER.'cliente/form-wizard-data.js'; ?>"></script>
+    <script src="<?php echo "//".JS_SERVER.'directory.js';  ?>"></script>
+    <script src="<?php echo "//".JS_SERVER.'app.js';  ?>"></script>
+    <script src="<?php echo "//".JS_SERVER.'cliente/module.js';  ?>"></script>
+    <script src="<?php echo "//".DIST_PANGONG_SERVER.'js/daterangepicker-data.js';  ?>"></script>
     <!-- /App Libs -->
 </body>
 </html>

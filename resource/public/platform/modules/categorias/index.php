@@ -3,8 +3,7 @@
  require_once ($_SERVER['DOCUMENT_ROOT'].'/desimed/conf.php');
   
  /* Rutas del directorio de controller */
- require_once(PROVIDER_PATH."clienteController.php");
- require_once(PROVIDER_PATH."productoController.php");
+ require_once(PROVIDER_PATH."categoriaController.php");
   /* Ruta del archivo de sesion*/
  require_once(CONFIGURATION_PATH."session.php");
  session::verificarSesion($_SESSION['idsesion']);
@@ -44,7 +43,7 @@
             <div class="container mt-xl-50 mt-sm-30 mt-15 ">
                 <div class="hk-pg-header align-items-top" id="areaImprimir">
                     <div>
-                        <h2 class="hk-pg-title font-weight-600 mb-10">Listado de medicamentos  registrados.</h2>
+                        <h2 class="hk-pg-title font-weight-600 mb-10">Listado de categorias registradas.</h2>
                     </div>
                     <div class="w-1024p">
                         <div class="form-inline">
@@ -60,39 +59,12 @@
                                         <select class="form-control custom-select d-block w-100" id="organizacion" name="organizacion">
                                             <option value="az">Ascendente Az</option>
                                             <option value="za">Descendente zA</option>
-                                            
-                                            <!-- <option value="ci">Ciudad Az</option> -->
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-auto">
                                     <div class="custom-control ">
                                         <label class=""> <i class='fa fa-clipboard-list fa-2x '></i> .</label>
-                                    </div>
-                                </div>
-                                <div class="col-auto">
-                                    <div class="input-group mb-2">
-                                        <select class="form-control custom-select d-block w-150" id="stock" name="stock">
-                                            <option value="tp">Producto : Stock</option>
-											<option value="tmax">Stock > minimo </option>
-											<option value="tmin">Stock <= minimo </option>
-											<option value="tzero">Stock 0 </option>
-                                        </select>
-                                    </div>
-                                </div>
-								<div class="col-auto">
-                                    <div class="custom-control ">
-                                        <label class=""> <i class='fa fa-filter fa-2x '></i> .</label>
-                                    </div>
-                                </div>
-                                <div class="col-auto">
-                                    <div class="input-group mb-2">
-                                        <select class="form-control custom-select d-block w-150" id="venta" name="venta">
-                                            <option value="vt">Producto : Venta </option>
-                                            <option value="vn">Venta normal</option>
-											<option value="va">Venta Afiliados</option>
-										
-                                        </select>
                                     </div>
                                 </div>
                                 <div class="col-auto">
@@ -104,7 +76,7 @@
                                             <input type="text" class="form-control w-70" placeholder="Consultar  ..." id="busqueda"
                                                 name="busqueda">
                                             <div class="input-group-append">
-                                                <button class="btn btn-gradient-info" type="button" id="buscarMedicamento"><li class="fa fa-search"></li> </button>
+                                                <button class="btn btn-gradient-info" type="button" id="buscarCategoria"><li class="fa fa-search"></li> </button>
                                             </div>
                                         </div>
                                     </div>
@@ -124,16 +96,9 @@
                                         <div class="form-inline">
                                             <div class="form-row align-items-center">
                                                 <div class="col-auto">
-                                                    <a href="<?php echo  "//".PLATFORM_SERVER."modules/medicamentos/agregar.php";
+                                                    <a href="<?php echo  "//".PLATFORM_SERVER."modules/categorias/agregar.php";
                                                         ?>" target="_self" class="btn btn-gradient-info mb-2 btn-sm"><i
-                                                            class="fa fa-capsules fa-2x"></i> Registrar producto</a>
-                                                </div>
-												<div class="col-auto">
-                                                    <a href="<?php echo  "//".PLATFORM_SERVER."modules/medicamentos/listadoMovimientos.php";
-                                                        ?>" target="_self" class="btn btn-gradient-info mb-2 btn-sm"><i class="fa fa-laptop-medical fa-2x"></i> Listado de movimientos</a>
-                                                </div>
-												<div class="col-auto">
-                                                    <a href="#" id="imprimirFactura" target="_self" class="btn btn-gradient-info mb-2 btn-sm"><i class="fa fa-print fa-2x"></i> Imprimir listado</a>
+                                                            class="fa fa-capsules fa-2x"></i> Registrar categoria</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -141,7 +106,7 @@
                                 </div>
                                 <div >
                                 <div id="tablaDinamica">
-                                    <?php productoController::listaproductosParametrizable('az','tp','tv',null);?>
+                                    <?php categoriaController::listacategorias();?>
                                 </div>
                                 </div>
                             </div>
@@ -161,22 +126,7 @@
     <?php  include_once("../../global/layouts/appLib.php");  ?>
     <script src="<?php echo "//".JS_SERVER.'directory.js';  ?>"></script>
     <script src="<?php echo "//".JS_SERVER.'app.js';  ?>"></script>
-    <script src="<?php echo "//".JS_SERVER.'medicamentos/module.js';  ?>"></script>
-    <script>
-    $(document).on('click', '#imprimirFactura', function (e) {
-        $('#areaImprimir').hide();
-        $('#areaImprimir2').hide();
-        $('#top_bar').hide();
-        window.print();
-        $('#areaImprimir').show();
-        $('#areaImprimir2').show();
-        $('#top_bar').show();
- 
-
-
-            });
-    </script>
-
+    <script src="<?php echo "//".JS_SERVER.'categorias/module.js';  ?>"></script>
     <!-- /App Libs -->
 </body>
 </html>
