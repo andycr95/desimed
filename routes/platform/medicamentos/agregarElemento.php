@@ -28,7 +28,7 @@
       $_POST['idproducto'],
       $_POST['cantidad'],
       $_POST['fecha'],
-      null,
+  	  $_POST['idfactura'],
       movimientosController::ultimoIditem()
        );
        

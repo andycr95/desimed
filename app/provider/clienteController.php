@@ -20,11 +20,9 @@ class clienteController
     return clienteDao::nClientes($estado);}
 
   /*Retorno un listado de usuarios a partir del tipo de consulta y el filtro de estado */
-  public static function listaCliente($tipoConsulta,$estado,$busqueda){
-     
-      if(strlen(trim($busqueda))==0){ $busqueda=null;  }
+  public static function listaCliente(){
 
-      $arrayCliente = clienteDao::listaClientes($tipoConsulta,$estado,$busqueda);
+      $arrayCliente = clienteDao::listadoClientes();
       
       if($arrayCliente != false){
         echo "<div class='table-responsive'>
@@ -33,9 +31,9 @@ class clienteController
             <thead>
                 <tr>
                     <th>Nombre</th>
+                    <th>Identificación</th>
                     <th>Genero</th>
                     <th>Fecha de nacimiento</th>
-                    <th>Profesion</th>
                     <th>Estado</th>
                     <th>Acciones</th>
                 </tr>
@@ -45,10 +43,10 @@ class clienteController
                foreach ($arrayCliente as $key => $value) {
                     
                echo"
-                    <td>".$arrayCliente[$key]->getNombreCompletoCliente()."</td>
-                    <td>".$arrayCliente[$key]->getGenero()."</td>
-                    <td>".$arrayCliente[$key]->getFechaNacimiento()."</td>
-                    <td>".$arrayCliente[$key]->getProfesion()."</td>
+                    <td>".$arrayCliente[$key]->getNombre_apellido()."</td>
+                    <td>".$arrayCliente[$key]->getDocumento()."</td>
+                    <td>".$arrayCliente[$key]->getSexo()."</td>
+                    <td>".$arrayCliente[$key]->getFecha_nacimiento()."</td>
 
                     ";
                     if($arrayCliente[$key]->getEstado() == 1){

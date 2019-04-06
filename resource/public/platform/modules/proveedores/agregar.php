@@ -36,7 +36,7 @@ include_once(PROVIDER_PATH."sesionController.php");
             <!-- Breadcrumb -->
             <nav class="hk-breadcrumb" aria-label="breadcrumb">
                 <ol class="breadcrumb breadcrumb-light bg-transparent">
-                    <li class="breadcrumb-item"><a href="<?php echo PLATFORM_SERVER."modules/proveedores/index.php"; ?>">proveedor</a></li>
+                    <li class="breadcrumb-item"><a href="<?php echo "//".PLATFORM_SERVER."modules/proveedores/index.php"; ?>">proveedor</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Agregar proveedor</li>
                 </ol>
             </nav>

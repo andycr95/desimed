@@ -35,24 +35,19 @@ $(document).on('click','#buscarMedicamento3',function(e){
 });
 
 $(document).on('click','#agregarElemento',function(e){
-  // $("#tablaDinamica").html("");
-  //var href = $(this).attr('value');
-  //console.log("xx"+$(this).attr('title'));
-  //var str =href.replace("#","");
-  
-
-
-  sendEventApp('POST',routesAppPlatform()+'medicamentos/agregarElemento.php',
   params = {
     "cantidad" : document.getElementsByName("cantidad")[0].value,
-    "fecha" : document.getElementsByName("fecha_utilidad")[0].value,
-    "lote" : document.getElementsByName("lote")[0].value,
+    "fecha_vencimiento" : document.getElementsByName("fecha_utilidad")[0].value,
+    "codigo_lote" : 12,
     "idproducto" : $(this).attr('title'),
-    "idfactura" : document.getElementsByName("idfactura")[0].value,
+    "iditem_factura_lote" : document.getElementsByName("idfactura")[0].value,
+    "estado_lote" : 1,
     "venta" : document.getElementsByName("venta")[0].value
 
-    },'#smgMedicamento');  
-    return false;
+    }
+    console.log(params);
+    
+ 
 });
 
 $(document).on('click','#quitarElemento',function(e){

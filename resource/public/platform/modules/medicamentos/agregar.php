@@ -204,7 +204,6 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/desimed/conf.php');
 
                                             <div class="col-md-12 form-group">
                                                 <div id="smgMedicamento"><div class="alert alert-primary" role="alert">
-                                        This is a primary alert—check it out!
                                     </div></div>
                                             
                                                 <label for=''>

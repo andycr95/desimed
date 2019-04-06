@@ -418,6 +418,85 @@ class clienteDao
 
     }
 
+    public static function listadoClientes(){
+
+        $data_source = new DataSource();
+    $data_table = $data_source->ejecutarConsulta("SELECT *  FROM cliente ");
+    if(count($data_table)>0) {
+        $cliente_array=array();
+        foreach ($data_table as $clave=> $valor) {
+            
+            $objCliente = new cliente(
+                $data_table[$clave]["idcliente"],
+                $data_table[$clave]["tipo_cliente"],
+                $data_table[$clave]["idempleado"],
+                $data_table[$clave]["registro"],
+                $data_table[$clave]["fecha_registro"],
+                $data_table[$clave]["nombre_apellido"],
+                $data_table[$clave]["documento"],
+                $data_table[$clave]["sexo"],
+                $data_table[$clave]["fecha_nacimiento"],
+                $data_table[$clave]["direccion"],
+                $data_table[$clave]["telefono"],
+                $data_table[$clave]["celular"],
+                $data_table[$clave]["email"],
+                $data_table[$clave]["dispacidad"],
+                $data_table[$clave]["extracto"],
+                $data_table[$clave]["nombre_beneficiario"],
+                $data_table[$clave]["sexo_beneficiario"],
+                $data_table[$clave]["documento_beneficiario"],
+                $data_table[$clave]["parentesco_beneficiario"],
+                $data_table[$clave]["discapacidad_beneficiario"],
+                $data_table[$clave]["discapacidad_desc_beneficiario"],
+                $data_table[$clave]["nombre_beneficiario2"],
+                $data_table[$clave]["sexo_beneficiario2"],
+                $data_table[$clave]["documento_beneficiario2"],
+                $data_table[$clave]["parentesco_beneficiario2"],
+                $data_table[$clave]["discapacidad_beneficiario2"],
+                $data_table[$clave]["discapaciadad_desc_beneficiario2"],
+                $data_table[$clave]["nombre_beneficiario3"],
+                $data_table[$clave]["sexo_beneficiario3"],
+                $data_table[$clave]["documento_beneficiario3"],
+                $data_table[$clave]["parentesco_beneficiario3"],
+                $data_table[$clave]["discapacidad_beneficiario3"],
+                $data_table[$clave]["discapacidad_desc_beneficiario3"],
+                $data_table[$clave]["nombre_beneficiario4"],
+                $data_table[$clave]["sexo_beneficiario4"],
+                $data_table[$clave]["documento_beneficiario4"],
+                $data_table[$clave]["parentesco_beneficiario4"],
+                $data_table[$clave]["discapacidad_beneficiario4"],
+                $data_table[$clave]["discapacidad_desc_beneficiario4"],
+                $data_table[$clave]["nombre_afiliacion"],
+                $data_table[$clave]["sexo_afiliacion"],
+                $data_table[$clave]["documento_afiliacion"],
+                $data_table[$clave]["parentesco_afiliacion"],
+                $data_table[$clave]["discapacidad_afiliacion"],
+                $data_table[$clave]["discapaciadad_desc_afiliacion"],
+                $data_table[$clave]["nombre_afiliacion2"],
+                $data_table[$clave]["sexo_afiliacion2"],
+                $data_table[$clave]["documento_afiliacion2"],
+                $data_table[$clave]["parentesco_afiliacion2"],
+                $data_table[$clave]["discapacidad_afiliacion2"],
+                $data_table[$clave]["discapaciadad_desc_afiliacion2"],
+                $data_table[$clave]["diabetes"],
+                $data_table[$clave]["hipertension"],
+                $data_table[$clave]["enf_cardiacas"],
+                $data_table[$clave]["estres"],
+                $data_table[$clave]["osteoporosis"],
+                $data_table[$clave]["artitis"],
+                $data_table[$clave]["cancer"],
+                $data_table[$clave]["alergias"],
+                $data_table[$clave]["migrana"],
+                $data_table[$clave]["ets"],
+                $data_table[$clave]["anemia"],
+                $data_table[$clave]["pulmonia"],
+                $data_table[$clave]["otras_cual"],
+                $data_table[$clave]["estado"]);
+            array_push($cliente_array, $objCliente);
+        }
+            return $cliente_array;
+            }else {return false;}
+        }
 
     public static function nClientes($estado)
     {

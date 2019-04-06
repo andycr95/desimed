@@ -4,7 +4,7 @@
 class cliente {
    private $idcliente;
    private $tipo_cliente;
-   private $idasesor;
+   private $idempleado;
    private $registro;
    private $fecha_registro;
    private $nombre_apellido;
@@ -15,20 +15,20 @@ class cliente {
    private $telefono;
    private $celular;
    private $email;
-   private $discapacidad;
+   private $dispacidad;
    private $extracto;
    private $nombre_beneficiario;
    private $sexo_beneficiario;
    private $documento_beneficiario;
    private $parentesco_beneficiario;
    private $discapacidad_beneficiario;
-   private $discapacidad_desc_beneficiario;
+   private $discapaciadad_desc_afiliacion;
    private $nombre_beneficiario2;
    private $sexo_beneficiario2;
    private $documento_beneficiario2;
    private $parentesco_beneficiario2;
    private $discapacidad_beneficiario2;
-   private $discapacidad_desc_beneficiario2;
+   private $discapaciadad_desc_beneficiario2;
    private $nombre_beneficiario3;
    private $sexo_beneficiario3;
    private $documento_beneficiario3;
@@ -52,15 +52,16 @@ class cliente {
    private $documento_afiliacion2;
    private $parentesco_afiliacion2;
    private $discapacidad_afiliacion2;
-   private $discapacidad_desc_afiliacion2;
+   private $discapaciadad_desc_afiliacion2;
    private $diabetes;
    private $hipertension;
    private $enf_cardiacas;
    private $estres;
    private $osteoporosis;
-   private $artitris;
+   private $artitis;
    private $cancer;
    private $alergias;
+   private $migrana;
    private $ets;
    private $anemia;
    private $pulmonia;
@@ -68,11 +69,77 @@ class cliente {
    private $estado;
    
    
-   public function __construct($idcliente, $tipo_cliente, $idasesor, $registro, $fecha_registro, $nombre_apellido, $documento, $sexo, $fecha_nacimiento, $direccion, $telefono, $celular, $email, $discapacidad, $extracto, $nombre_beneficiario, $sexo_beneficiario, $documento_beneficiario, $parentesco_beneficiario, $discapacidad_beneficiario, $discapacidad_desc_beneficiario, $nombre_beneficiario2, $sexo_beneficiario2, $documento_beneficiario2, $parentesco_beneficiario2, $discapacidad_beneficiario2, $discapacidad_desc_beneficiario2, $nombre_beneficiario3, $sexo_beneficiario3, $documento_beneficiario3, $parentesco_beneficiario3, $discapacidad_beneficiario3, $discapacidad_desc_beneficiario3, $nombre_beneficiario4, $sexo_beneficiario4, $documento_beneficiario4, $parentesco_beneficiario4, $discapacidad_beneficiario4, $discapacidad_desc_beneficiario4, $nombre_afiliacion, $sexo_afiliacion, $documento_afiliacion, $parentesco_afiliacion, $discapacidad_afiliacion, $discapacidad_desc_afiliacion, $nombre_afiliacion2, $sexo_afiliacion2, $documento_afiliacion2, $parentesco_afiliacion2, $discapacidad_afiliacion2, $discapacidad_desc_afiliacion2, $diabetes, $hipertension, $enf_cardiacas, $estres, $osteoporosis, $artitris, $cancer, $alergias, $ets, $anemia, $pulmonia, $otras_cual, $estado) {
+   public function __construct(
+   $idcliente,
+   $tipo_cliente,
+   $idempleado,
+   $registro,
+   $fecha_registro,
+   $nombre_apellido,
+   $documento,
+   $sexo,
+   $fecha_nacimiento,
+   $direccion,
+   $telefono,
+   $celular,
+   $email,
+   $dispacidad,
+   $extracto,
+   $nombre_beneficiario,
+   $sexo_beneficiario,
+   $documento_beneficiario,
+   $parentesco_beneficiario,
+   $discapacidad_beneficiario,
+   $discapacidad_desc_beneficiario,
+   $nombre_beneficiario2,
+   $sexo_beneficiario2,
+   $documento_beneficiario2,
+   $parentesco_beneficiario2,
+   $discapacidad_beneficiario2,
+   $discapaciadad_desc_beneficiario2,
+   $nombre_beneficiario3,
+   $sexo_beneficiario3,
+   $documento_beneficiario3,
+   $parentesco_beneficiario3,
+   $discapacidad_beneficiario3,
+   $discapaciadad_desc_beneficiario3,
+   $nombre_beneficiario4,
+   $sexo_beneficiario4,
+   $documento_beneficiario4,
+   $parentesco_beneficiario4,
+   $discapacidad_beneficiario4,
+   $discapaciadad_desc_beneficiario4,
+   $nombre_afiliacion,
+   $sexo_afiliacion,
+   $documento_afiliacion,
+   $parentesco_afiliacion,
+   $discapacidad_afiliacion,
+   $discapaciadad_desc_afiliacion,
+   $nombre_afiliacion2,
+   $sexo_afiliacion2,
+   $documento_afiliacion2,
+   $parentesco_afiliacion2,
+   $discapacidad_afiliacion2,
+   $discapaciadad_desc_afiliacion2,
+   $diabetes,
+   $hipertension,
+   $enf_cardiacas,
+   $estres,
+   $osteoporosis,
+   $artitis,
+   $cancer,
+   $alergias,
+   $migrana,
+   $ets,
+   $anemia,
+   $pulmonia,
+   $otras_cual,
+   $estado) {
        $this->idcliente = $idcliente;
        $this->tipo_cliente = $tipo_cliente;
-       $this->idasesor = $idasesor;
+       $this->idasesor = $idempleado;
        $this->registro = $registro;
+       $this->migrana = $migrana;
        $this->fecha_registro = $fecha_registro;
        $this->nombre_apellido = $nombre_apellido;
        $this->documento = $documento;
@@ -82,7 +149,7 @@ class cliente {
        $this->telefono = $telefono;
        $this->celular = $celular;
        $this->email = $email;
-       $this->discapacidad = $discapacidad;
+       $this->dispacidad = $dispacidad;
        $this->extracto = $extracto;
        $this->nombre_beneficiario = $nombre_beneficiario;
        $this->sexo_beneficiario = $sexo_beneficiario;
@@ -95,37 +162,37 @@ class cliente {
        $this->documento_beneficiario2 = $documento_beneficiario2;
        $this->parentesco_beneficiario2 = $parentesco_beneficiario2;
        $this->discapacidad_beneficiario2 = $discapacidad_beneficiario2;
-       $this->discapacidad_desc_beneficiario2 = $discapacidad_desc_beneficiario2;
+       $this->discapaciadad_desc_beneficiario2 = $discapaciadad_desc_beneficiario2;
        $this->nombre_beneficiario3 = $nombre_beneficiario3;
        $this->sexo_beneficiario3 = $sexo_beneficiario3;
        $this->documento_beneficiario3 = $documento_beneficiario3;
        $this->parentesco_beneficiario3 = $parentesco_beneficiario3;
        $this->discapacidad_beneficiario3 = $discapacidad_beneficiario3;
-       $this->discapacidad_desc_beneficiario3 = $discapacidad_desc_beneficiario3;
+       $this->discapaciadad_desc_beneficiario3 = $discapaciadad_desc_beneficiario3;
        $this->nombre_beneficiario4 = $nombre_beneficiario4;
        $this->sexo_beneficiario4 = $sexo_beneficiario4;
        $this->documento_beneficiario4 = $documento_beneficiario4;
        $this->parentesco_beneficiario4 = $parentesco_beneficiario4;
        $this->discapacidad_beneficiario4 = $discapacidad_beneficiario4;
-       $this->discapacidad_desc_beneficiario4 = $discapacidad_desc_beneficiario4;
+       $this->discapaciadad_desc_beneficiario4 = $discapaciadad_desc_beneficiario4;
        $this->nombre_afiliacion = $nombre_afiliacion;
        $this->sexo_afiliacion = $sexo_afiliacion;
        $this->documento_afiliacion = $documento_afiliacion;
        $this->parentesco_afiliacion = $parentesco_afiliacion;
        $this->discapacidad_afiliacion = $discapacidad_afiliacion;
-       $this->discapacidad_desc_afiliacion = $discapacidad_desc_afiliacion;
+       $this->discapaciadad_desc_afiliacion = $discapaciadad_desc_afiliacion;
        $this->nombre_afiliacion2 = $nombre_afiliacion2;
        $this->sexo_afiliacion2 = $sexo_afiliacion2;
        $this->documento_afiliacion2 = $documento_afiliacion2;
        $this->parentesco_afiliacion2 = $parentesco_afiliacion2;
        $this->discapacidad_afiliacion2 = $discapacidad_afiliacion2;
-       $this->discapacidad_desc_afiliacion2 = $discapacidad_desc_afiliacion2;
+       $this->discapaciadad_desc_afiliacion2 = $discapaciadad_desc_afiliacion2;
        $this->diabetes = $diabetes;
        $this->hipertension = $hipertension;
        $this->enf_cardiacas = $enf_cardiacas;
        $this->estres = $estres;
        $this->osteoporosis = $osteoporosis;
-       $this->artitris = $artitris;
+       $this->artitis = $artitis;
        $this->cancer = $cancer;
        $this->alergias = $alergias;
        $this->ets = $ets;

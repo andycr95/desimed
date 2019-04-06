@@ -29,12 +29,13 @@
 
  );
  //print_r($modelProducto);
- $url="//".PLATFORM_SERVER."modules/medicamentos/verFicha.php?id=".productoController::ultimoIdmedicamento();
- $url2="//".PLATFORM_SERVER."modules/movimientos/registrarMovimientos.php";
- echo $url;
+ $url2="//".PLATFORM_SERVER."modules/movimientos/agregar.php";
+ 
  echo $url2;
-  if(productoController::registrarProducto($modelProducto)){
-   
+ if(productoController::registrarProducto($modelProducto)){
+	 
+	$url="//".PLATFORM_SERVER."modules/medicamentos/verFicha.php?id=".productoController::ultimoIdmedicamento();
+	echo $url;
     echo "<div class='alert alert-primary' role='alert'>
 			 Registro de producto completo ! &nbsp <a href='". $url."'  class='btn btn-gradient-primary text-white'>Ver ficha del producto </a>
 			 <a href='". $url2."'  class='btn btn-gradient-success text-white'>Registrar movimientos (Stock) </a>

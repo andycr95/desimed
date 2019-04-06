@@ -43,13 +43,15 @@ class movimientosDao {
     public function crearLote(lote $lote)
     {
         $data_source = new DataSource();
-        $sql2 = "INSERT INTO lote VALUES (NULL, :codigo_lote, :idproducto, :cantidad, :fecha,1 )";
+        $sql2 = "INSERT INTO lote VALUES (NULL, :codigo_lote, :idproducto, :cantidad, :fecha_vencimiento, estado_lote,:iditem_factura_lote)";
 
         $resultado2 = $data_source->ejecutarActualizacion($sql2, array(
             ':codigo_lote' => $lote->getCodigo_lote(),
             ':idproducto' => $lote->getIdproducto(),
+            ':iditem_factura_lote' => $lote->getIdtem_factura_lote(),
             ':cantidad' => $lote->getCantidad(),
-            ':fecha' => $lote->getFecha_vencimiento()
+            ':fecha_vencimiento' => $lote->getFecha_vencimiento(),
+            ':estado_lote' => $lote->getEstado_lote()
         ));
         return $resultado2;
     }

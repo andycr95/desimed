@@ -123,7 +123,7 @@
                                     </div>
                                 </div>
                                 <div id="tablaDinamica">
-                                    <?php clienteController::listaCliente('az','tc',null);?>
+                                    <?php clienteController::listaCliente();?>
                                 </div>
                             </div>
                         </div>
