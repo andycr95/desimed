@@ -315,7 +315,7 @@ class clienteDao
          switch ($estado) {
              //todos
             case 'tc':
-            $type =" ";
+            $type ="";
             break;
                   
             //activos
