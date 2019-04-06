@@ -4,7 +4,7 @@
   
  /* Rutas del directorio de controller */
  require_once(PROVIDER_PATH."clienteController.php");
-  /* Ruta del archivo de sesion*/
+ /* Ruta del archivo de sesion*/
  require_once(CONFIGURATION_PATH."session.php");
  session::verificarSesion($_SESSION['idsesion']);
 ?>
@@ -111,21 +111,19 @@
                                                 <div class="col-auto">
                                                     <a href="<?php echo  "//".PLATFORM_SERVER."modules/clientes/agregar.php";
                                                         ?>" target="_self" class="btn btn-gradient-info mb-2 btn-sm"><i
-                                                            class="fa fa-user-plus "></i> Crear
-                                                        nuevo cliente </a>
+                                                            class="fa fa-user-plus "></i> Crear nuevo cliente </a>
                                                 </div>
                                                 <div class="col-auto">
                                                     <a href="<?php echo  "//".PLATFORM_SERVER."modules/clientes/agregarAfiliado.php";
                                                         ?>" target="_self" class="btn btn-gradient-info mb-2 btn-sm"><i
-                                                            class="fa fa-address-card "></i> Crear
-                                                        nuevo afiliado </a>
+                                                            class="fa fa-address-card "></i> Crear nuevo afiliado </a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div id="tablaDinamica">
-                                    <?php clienteController::listaClientes('az','tc',null);?>
+                                    <?php clienteController::listaCliente('az','tc',null);?>
                                 </div>
                             </div>
                         </div>

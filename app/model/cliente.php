@@ -29,7 +29,7 @@ class cliente {
    private $parentesco_beneficiario2;
    private $discapacidad_beneficiario2;
    private $discapacidad_desc_beneficiario2;
-    private $nombre_beneficiario3;
+   private $nombre_beneficiario3;
    private $sexo_beneficiario3;
    private $documento_beneficiario3;
    private $parentesco_beneficiario3;

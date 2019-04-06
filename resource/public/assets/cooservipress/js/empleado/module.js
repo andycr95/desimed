@@ -57,8 +57,8 @@ console.log('bien');
        "fecha" : document.getElementsByName("fecha")[0].value,
        "mail" : document.getElementsByName("mail")[0].value,
        "usuario" : document.getElementsByName("usuario")[0].value,
-       "clave" : document.getElementsByName("clave")[0].value,
-    },'#resultado');  
+       "clave" : document.getElementsByName("clave")[0].value},
+       '#resultado');  
      return false;
     
 }

@@ -34,8 +34,8 @@
                 <div class="dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
                     <a class="dropdown-item" href="<?php echo "//".PLATFORM_SERVER.'modules/proveedores/index.php';?>"><i
                             class="fa fa-truck "></i>&nbsp; Proveedores</a>
-                    <a class="dropdown-item" href="<?php echo "//".PLATFORM_SERVER.'modules/clientes/index.php';?>"><i class="fa fa-walking "></i>&nbsp;
-                        Clientes</a>
+                    <a class="dropdown-item" href="<?php echo "//".PLATFORM_SERVER.'modules/clientes/index.php';?>"><i 
+                            class="fa fa-walking "></i>&nbsp; Clientes</a>
                     <a class="dropdown-item" href="<?php echo "//".PLATFORM_SERVER.'modules/empleados/index.php';?>"><i
                             class="fa fa-id-card "></i>&nbsp; Empleados</a>
 
@@ -60,7 +60,7 @@
                     <i class="fa fa-user-tag"></i> Comercial
                 </a>
                 <div class="dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
-                    <a class="dropdown-item" href="<?php echo "//".PLATFORM_SERVER.'modules/facturacion/index.php';?>">
+                    <a class="dropdown-item" href="<?php echo "//".PLATFORM_SERVER.'modules/afiliados/index.php';?>">
                     <i class="fa fa-id-card"></i>&nbsp; Afiliados
                     </a>
                     
@@ -73,8 +73,8 @@
                     <i class="fa fa-first-aid"></i> Consultorio
                 </a>
                 <div class="dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
-                    <a class="dropdown-item" href="<?php echo "//".PLATFORM_SERVER.'modules/consultorio/historial.php';?>"><i class="fa fa-file-medical"></i>&nbsp; Citas</a>
-                    <a class="dropdown-item" href="<?php echo "//".PLATFORM_SERVER.'modules/consultorio/citas.php';?>"><i class="fa fa-notes-medical"></i>&nbsp; Historias clinicas</a>
+                    <a class="dropdown-item" href="<?php echo "//".PLATFORM_SERVER.'modules/citas/index.php';?>"><i class="fa fa-file-medical"></i>&nbsp; Citas</a>
+                    <a class="dropdown-item" href="<?php echo "//".PLATFORM_SERVER.'modules/citas/historias_clinicas.php';?>"><i class="fa fa-notes-medical"></i>&nbsp; Historias clinicas</a>
 
                 </div>
             </li>

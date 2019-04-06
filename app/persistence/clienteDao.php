@@ -1,7 +1,12 @@
 <?php
-
+/* Ruta del archivo de configuracion principal*/
 require_once($_SERVER['DOCUMENT_ROOT'].'/desimed/conf.php');
+
+/* Rutas del archivo motor de DB */
 require_once(DATABASE_PATH."DataSource.php");
+
+/* Rutas del directorio de model */
+require_once(MODEL_PATH."sesion.php");
 require_once(MODEL_PATH."cliente.php");
 
 class clienteDao
@@ -12,9 +17,9 @@ class clienteDao
         $sql2 = "INSERT INTO cliente VALUES (
         null,
         :tipo_cliente,
-        null,
-        null,
-        now(),
+        :idempleado,
+        :registro,
+        :fecha_registro(),
         :nombre_apellido,
         :documento,
         :sexo,
@@ -23,35 +28,35 @@ class clienteDao
         :telefono,
         :celular,
         :email,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
+        :discapacidad,
+        :extracto,
+        :nombre_beneficiario,
+        :sexo_beneficiario,
+        :documento_beneficiario,
+        :parentesco_beneficiario,
+        :discapacidad_beneficiario,
+        :discapacidad_desc_beneficiario,
+        :nombre_beneficiario2,
+        :sexo_beneficiario2,
+        :documento_beneficiario2,
+        :parentesco_beneficiario2,
+        :discapacidad_beneficiario2,
+        :discapacidad_desc_beneficiario2,
+        :nombre_beneficiario3,
+        :sexo_beneficiario3,
+        :documento_beneficiario3,
+        :parentesco_beneficiario3,
+        :discapacidad_beneficiario3,
+        :discapacidad_desc_beneficiario3,
+        :nombre_beneficiario4,
+        :sexo_beneficiario4,
+        :documento_beneficiario4,
+        :parentesco_beneficiario4,
+        :discapacidad_beneficiario4,
+        :discapacidad_desc_beneficiario4,
+        :nombre_afiliacion,
+        :sexo_afiliacion,
+        :,
         null,
         null,
         null,
@@ -80,7 +85,6 @@ class clienteDao
         ));
         return $resultado2;
     }
-
 
     public static function crearClienteAfiliado(cliente $cliente)
     {
@@ -219,8 +223,7 @@ class clienteDao
     public function listadoCliente($id_cliente)
     {
         $data_source = new DataSource();
-        $data_table = $data_source->ejecutarConsulta("SELECT * FROM `cliente` "
-        );
+        $data_table = $data_source->ejecutarConsulta("SELECT * FROM cliente");
 
         if(count($data_table)>0){
       
@@ -296,15 +299,15 @@ class clienteDao
         $status ="";
          switch ($tipoConsulta) {
             case 'fr':
-            $status = "order by fecha_registro_cliente DESC";
+            $type = "order by fecha_registro_cliente DESC";
             break;
 
             case 'az':
-            $status = "order by nombre_apellido_cliente ASC";
+            $type = "order by nombre_apellido_cliente ASC";
             break;
 
             case 'za':
-            $status = "order by nombre_apellido_cliente DESC";
+            $type = "order by nombre_apellido_cliente DESC";
             break;
 
             // case 'ci':
@@ -315,25 +318,25 @@ class clienteDao
          switch ($estado) {
              //todos
             case 'tc':
-            $type ="";
+            $status =" ";
             break;
                   
             //activos
             case 'ca':
-            $type ="where cliente.estado_cliente = 1  ";
+            $status ="where cliente.estado_cliente = 1  ";
             break;
             
             //inactivos
             case 'ci':
-            $type ="where cliente.estado_cliente = 0  ";
+            $status ="where cliente.estado_cliente = 0  ";
             break;
 
             case 'cm':
-            $type ="where cliente.estado_cliente = 2 ";
+            $status ="where cliente.estado_cliente = 2 ";
             break;
 
             case 'cp':
-            $type ="where cliente.estado_cliente = 3 ";
+            $status ="where cliente.estado_cliente = 3 ";
             break;
 
 
