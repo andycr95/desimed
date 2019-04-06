@@ -109,122 +109,62 @@ class proveedorDao
     }
 
 
-    public static function listaproductosParametrizable($organizacion,$stock,$tipo_venta,$busqueda){
+    public static function listaproveedoresParametrizable($organizacion,$busqueda){
 
         $organizacion_ ="";
-        $stock_ = "";
-        $tipo_venta_="";
         $sql_=" ";
     
         switch ($organizacion) {
     
             case 'az':
-            $organizacion_ = "order by etiqueta_producto ASC";
+            $organizacion_ = "order by razon_social ASC";
             break;
     
             case 'za':
-            $organizacion_ = "order by etiqueta_producto DESC";
+            $organizacion_ = "order by razon_social DESC";
+            break;
+
+            case 'fr':
+            $organizacion_ = "order by razon_social DESC";
+            break;
+
+            case 'ci':
+            $organizacion_ = "order by ciudad_contacto ASC";
             break;
           
          }
     
-         
-    
-         switch ($tipo_venta) {
-    
-            case 'vn':
-            $tipo_venta_ = "  producto.tipo_producto ='VENTA NORMAL' ";
-            $sql_ = "where ".$tipo_venta_;
-            break;
-    
-            case 'va':
-            $tipo_venta_ = "  producto.tipo_producto ='VENTA AFILIADO' ";
-            $sql_ = "where ".$tipo_venta_;
-            break;
-    
-            case 'vt':
-            $sql_ = $sql_." ";
-            break;
-    
-            
-          
-         }
-    
-    
-         switch ($stock) {
-    
-            case 'tmax':
-            $stock_ = "  producto.stock_normal > producto.stock_minimo ";
-            $sql_ =  $sql_." and  ".$stock_." ";
-            break;
-    
-            case 'tmin':
-            $stock_ = "  producto.stock_normal <= producto.stock_minimo ";
-            $sql_ =  $sql_." and  ".$stock_." ";
-            break;
-    
-    
-            case 'tzero':
-            $stock_ = "  producto.stock_normal = 0  ";
-            $sql_ =  $sql_." and  ".$stock_." ";
-            break;
-    
-            case 'tp':
-            $stock_ = "    ";
-            $sql_ =  $sql_." ";
-            break;
-          
-         }
     
         if(!is_null($busqueda)){
-            $sql_ =  $sql_." and  etiqueta_producto LIKE '%".$busqueda."%' "; 
+            $sql_ =  " Where razon_social LIKE '%".$busqueda."%' "; 
         }
     
     
-        //echo " sqlx -> ".$sql_;
-         $sql ="
-            SELECT * FROM `producto` 
-                   join laboratorio on(producto.idlaboratorio_producto=laboratorio.idlaboratorio) 
-                   join posicion on(producto.idposicion_producto=posicion.idposicion) 
-                   join proveedor on(producto.idproveedor_producto=proveedor.idproveedor)
-                   ".$sql_." ".$organizacion_;
-        //echo $sql;           
+         $sql ="SELECT * FROM `proveedor` ".$sql_." ".$organizacion_;
     
         $data_source = new DataSource();
         $data_table = $data_source->ejecutarConsulta($sql);
     
         if(count($data_table)>0) {
             
-            $producto_array=array();
+            $proveedor_array=array();
             foreach ($data_table as $clave=> $valor) {
                 
-                $objproducto = new producto(
-                    $data_table[$clave]["idproducto"],
-                    $data_table[$clave]["idproveedor_producto"],
-                    $data_table[$clave]["idlaboratorio_producto"],
-                    $data_table[$clave]["idposicion_producto"],
-                    $data_table[$clave]["presentacion"],
-                    $data_table[$clave]["codigo_barras"],
-                    $data_table[$clave]["etiqueta_producto"],
-                    $data_table[$clave]["descripcion_producto"],
-                    $data_table[$clave]["valor"],
-                    $data_table[$clave]["descuento"],
-                    $data_table[$clave]["iva"],
-                    $data_table[$clave]["estado_producto"],
-                    $data_table[$clave]["tipo_producto"],
-                    $data_table[$clave]["stock_minimo"],
-                    $data_table[$clave]["stock_normal"],
-                    $data_table[$clave]["naturaleza"],
-                    $data_table[$clave]["porcentaje_ganancia"]);
+                $objproveedor = new proveedor(
+                    $data_table[$clave]["idproveedor"],
+                    $data_table[$clave]["razon_social"],
+                    $data_table[$clave]["etiqueta_contacto"],
+                    $data_table[$clave]["nombre_contacto"],
+                    $data_table[$clave]["telefono_contacto"],
+                    $data_table[$clave]["direccion_contacto"],
+                    $data_table[$clave]["ciudad_contacto"]);
             
-            array_push($producto_array, $objproducto);
+            array_push($proveedor_array, $objproveedor);
             }
-            return $producto_array;
+            return $proveedor_array;
         }else {return false;}
     
         $organizacion_ ="";
-        $stock_ = "";
-        $tipo_venta_="";
         $sql_=" ";
     }
 }

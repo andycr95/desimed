@@ -5,7 +5,6 @@
   /* Rutas del directorio de persistencia */
   require_once(PERSISTENCE_PATH."productoDao.php");
   require_once(PERSISTENCE_PATH."laboratorioDao.php");
-  require_once(PERSISTENCE_PATH."posicionDao.php");
   require_once(PERSISTENCE_PATH."proveedorDao.php");
   
 class proveedorController
@@ -57,10 +56,10 @@ class proveedorController
     }  
    }
 
-   public static function listaproveedoresParametrizable($organizacion,$stock,$tipo_venta,$busqueda){
+   public static function listaproveedoresParametrizable($organizacion,$busqueda){
      
     if(strlen(trim($busqueda))==0){ $busqueda=null;  }
-    $arrayproveedores=proveedorDao::listaproveedoresParametrizable($organizacion,$stock,$tipo_venta,$busqueda);
+    $arrayproveedores=proveedorDao::listaproveedoresParametrizable($organizacion, $busqueda);
     if($arrayproveedores != false){
       echo "<div class='table-responsive'>
       <table class='table table-sm table-hover mb-0'>
@@ -86,8 +85,6 @@ class proveedorController
                 <td>".$arrayproveedores[$key]->getDireccion_contacto()."</td>
                 <td>".$arrayproveedores[$key]->getCiudad_contacto()."</td>
               </tr>";
-              
-
              }  
            echo "
           </tbody>
