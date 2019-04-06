@@ -20,10 +20,12 @@ class clienteController
     return clienteDao::nClientes($estado);}
 
   /*Retorno un listado de usuarios a partir del tipo de consulta y el filtro de estado */
-  public static function listaClientes($tipoConsulta,$estado,$busqueda){
+  public static function listaCliente($tipoConsulta,$estado,$busqueda){
      
       if(strlen(trim($busqueda))==0){ $busqueda=null;  }
+
       $arrayCliente = clienteDao::listaClientes($tipoConsulta,$estado,$busqueda);
+      
       if($arrayCliente != false){
         echo "<div class='table-responsive'>
         <table class='table table-sm table-hover mb-0'>
@@ -88,7 +90,9 @@ class clienteController
   public static function listaClienteResumen($tipoConsulta,$estado,$busqueda){
      
     if(strlen(trim($busqueda))==0){ $busqueda=null;  }
-    $arrayCliente = clienteDao::listadoUsuarios($tipoConsulta,$estado,$busqueda);
+
+    $arrayCliente = clienteDao::listadoCliente($tipoConsulta,$estado,$busqueda);
+
     if($arrayCliente != false){
       echo "<div class='table-responsive'>
       <table class='table table-sm table-hover mb-0'>

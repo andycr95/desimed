@@ -19,7 +19,8 @@ class empleadoDao
     {
         //print_r($empleado);
         $data_source = new DataSource();
-        $sql2 = "INSERT INTO empleado VALUES (null,
+        $sql2 = "INSERT INTO empleado VALUES (
+        null,
         :tipo_empleado,
         :rol_empleado,
         :descripcion_empleado,
@@ -28,7 +29,10 @@ class empleadoDao
         :direccion,
         :telefono,
         :sexo,
-        :fecha_nacimiento_empleado,:mail,:idsesion_empleado,1)";
+        :fecha_nacimiento_empleado,
+        :mail,
+        :idsesion_empleado,
+        1)";
 
         $resultado2 = $data_source->ejecutarActualizacion($sql2, array(
             ':tipo_empleado' => $empleado->getTipo_empleado(),
@@ -107,11 +111,11 @@ class empleadoDao
          switch ($tipoConsulta) {
 
             case 'az':
-            $status = "order by nombre_empleado ASC";
+            $type = "order by nombre_empleado ASC";
             break;
 
             case 'za':
-            $status = "order by nombre_empleado DESC";
+            $type = "order by nombre_empleado DESC";
             break;
        
          }
@@ -119,34 +123,34 @@ class empleadoDao
          switch ($estado) {
              //todos
             case 'te':
-            $type =" ";
+            $status =" ";
             break;
             
             //conectados
             case 'as':
-            $type ="where empleado.tipo_empleado = 'ASESORAS'  ";
+            $status ="where empleado.tipo_empleado = 'ASESORAS'  ";
             break;
             
             //activos
             case 'em':
-            $type ="where empleado.tipo_empleado = 'ENFERMERAS'  ";
+            $status ="where empleado.tipo_empleado = 'ENFERMERAS'  ";
             break;
             
             //inactivos
             case 'me':
-            $type ="where empleado.tipo_empleado = 'MEDICOS'  ";
+            $status ="where empleado.tipo_empleado = 'MEDICOS'  ";
             break;
 
             case 'fa':
-            $type ="where empleado.tipo_empleado = 'FARMACIA' ";
+            $status ="where empleado.tipo_empleado = 'FARMACIA' ";
             break;
 
             case 'men':
-            $type ="where empleado.tipo_empleado = 'MENSAJERIA' ";
+            $status ="where empleado.tipo_empleado = 'MENSAJERIA' ";
             break;
 
             case 'ad':
-            $type ="where empleado.tipo_empleado = 'ADMINISTRACION' ";
+            $status ="where empleado.tipo_empleado = 'ADMINISTRACION' ";
             break;
 
 
@@ -160,8 +164,7 @@ class empleadoDao
         }
         $data_source = new DataSource();
         $sqlR="SELECT * FROM sesion join empleado on (sesion.idsesion=empleado.idsesion_empleado)   ".$type." ".$busqueda." ".$status;
-        $data_table = $data_source->ejecutarConsulta($sqlR
-        );
+        $data_table = $data_source->ejecutarConsulta($sqlR);
         //echo $sqlR;
         //print_r($data_table);     
         if(count($data_table)>0){
@@ -198,8 +201,7 @@ class empleadoDao
         
         $data_source = new DataSource();
         $sqlR="SELECT * from empleado where empleado.tipo_empleado = 'ASESORAS' ";
-        $data_table = $data_source->ejecutarConsulta($sqlR
-        );
+        $data_table = $data_source->ejecutarConsulta($sqlR);
         //echo $sqlR;
         //print_r($data_table);     
         if(count($data_table)>0){

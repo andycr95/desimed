@@ -1,9 +1,10 @@
 <?php session_start();
-include_once($_SERVER['DOCUMENT_ROOT'].'/conf.php');
+include_once($_SERVER['DOCUMENT_ROOT'].'/desimed/conf.php');
 include_once(PROVIDER_PATH."sesionController.php");
 include_once(PROVIDER_PATH."empleadoController.php");
   /* Ruta del archivo de sesion*/
   require_once(CONFIGURATION_PATH."session.php");
+  require_once(PROVIDER_PATH."clienteController.php");
   session::verificarSesion($_SESSION['idsesion']);
 ?>
 <!DOCTYPE html>
@@ -236,7 +237,7 @@ include_once(PROVIDER_PATH."empleadoController.php");
                                             <br>
                                             <div class="row">
                                                 <div class="col-md-3 form-group">
-                                                    <label for="">Nombre Beneficiario #1</label>
+                                                    <label for="">Nombre Beneficiario #3</label>
                                                     <input class="form-control" id="nombre_beneficiario3" name="nombre_beneficiario3"
                                                         placeholder="nombre . . ." value="" type="text">
                                                 </div>
@@ -277,7 +278,7 @@ include_once(PROVIDER_PATH."empleadoController.php");
                                             <br>
                                             <div class="row">
                                                 <div class="col-md-3 form-group">
-                                                    <label for="">Nombre Beneficiario #1</label>
+                                                    <label for="">Nombre Beneficiario #4</label>
                                                     <input class="form-control" id="nombre_beneficiario4" name="nombre_beneficiario4"
                                                         placeholder="nombre . . ." value="" type="text">
                                                 </div>

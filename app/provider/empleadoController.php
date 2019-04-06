@@ -35,8 +35,11 @@ class empleadoController
   public static function listaempleados($tipoConsulta,$estado,$busqueda){
      
     if(strlen(trim($busqueda))==0){ $busqueda=null;  }
+
     $arrayempleado = empleadoDao::listadoempleados($tipoConsulta,$estado,$busqueda);
+
     if($arrayempleado != false){
+      
       echo "<div class='table-responsive'>
       <table class='table table-sm table-hover mb-0'>
               

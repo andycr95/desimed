@@ -1,8 +1,9 @@
 <?php session_start();
-include_once($_SERVER['DOCUMENT_ROOT'].'/conf.php');
+include_once($_SERVER['DOCUMENT_ROOT'].'/desimed/conf.php');
 include_once(PROVIDER_PATH."sesionController.php");
   /* Ruta del archivo de sesion*/
   require_once(CONFIGURATION_PATH."session.php");
+  require_once(PROVIDER_PATH."clienteController.php");
   session::verificarSesion($_SESSION['idsesion']);
 ?>
 <!DOCTYPE html>
