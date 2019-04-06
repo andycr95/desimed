@@ -152,7 +152,7 @@
 <row name="discapacidad_beneficiario2" null="1" autoincrement="0">
 <datatype>VARCHAR(10)</datatype>
 <default>NULL</default></row>
-<row name="discapaciadad_desc_beneficiario2" null="1" autoincrement="0">
+<row name="discapacidad_desc_beneficiario2" null="1" autoincrement="0">
 <datatype>VARCHAR(250)</datatype>
 <default>NULL</default></row>
 <row name="nombre_beneficiario3" null="1" autoincrement="0">

@@ -28,7 +28,7 @@ class cliente {
    private $documento_beneficiario2;
    private $parentesco_beneficiario2;
    private $discapacidad_beneficiario2;
-   private $discapaciadad_desc_beneficiario2;
+   private $discapacidad_desc_beneficiario2;
    private $nombre_beneficiario3;
    private $sexo_beneficiario3;
    private $documento_beneficiario3;
@@ -96,7 +96,7 @@ class cliente {
    $documento_beneficiario2,
    $parentesco_beneficiario2,
    $discapacidad_beneficiario2,
-   $discapaciadad_desc_beneficiario2,
+   $discapacidad_desc_beneficiario2,
    $nombre_beneficiario3,
    $sexo_beneficiario3,
    $documento_beneficiario3,
@@ -162,7 +162,7 @@ class cliente {
        $this->documento_beneficiario2 = $documento_beneficiario2;
        $this->parentesco_beneficiario2 = $parentesco_beneficiario2;
        $this->discapacidad_beneficiario2 = $discapacidad_beneficiario2;
-       $this->discapaciadad_desc_beneficiario2 = $discapaciadad_desc_beneficiario2;
+       $this->discapacidad_desc_beneficiario2 = $discapacidad_desc_beneficiario2;
        $this->nombre_beneficiario3 = $nombre_beneficiario3;
        $this->sexo_beneficiario3 = $sexo_beneficiario3;
        $this->documento_beneficiario3 = $documento_beneficiario3;
@@ -255,7 +255,7 @@ class cliente {
    }
 
    public function getDiscapacidad() {
-       return $this->discapacidad;
+       return $this->dispacidad;
    }
 
    public function getExtracto() {
@@ -403,7 +403,7 @@ class cliente {
    }
 
    public function getDiscapacidad_desc_afiliacion2() {
-       return $this->discapacidad_desc_afiliacion2;
+       return $this->discapaciadad_desc_afiliacion2;
    }
 
    public function getDiabetes() {
@@ -427,7 +427,7 @@ class cliente {
    }
 
    public function getArtitris() {
-       return $this->artitris;
+       return $this->artitis;
    }
 
    public function getCancer() {
@@ -527,8 +527,8 @@ class cliente {
        return $this;
    }
 
-   public function setDiscapacidad($discapacidad) {
-       $this->discapacidad = $discapacidad;
+   public function setDiscapacidad($dispacidad) {
+       $this->dispacidad = $dispacidad;
        return $this;
    }
 

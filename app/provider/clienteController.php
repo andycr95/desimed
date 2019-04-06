@@ -228,8 +228,8 @@ class clienteController
   public static function registrarCliente($modelCredito){
      return clienteDao::crearCliente($modelCredito);}
 
-  public static function registrarAfiliado($modelCredito){
-      return clienteDao::crearClienteAfiliado($modelCredito);
+  public static function registrarAfiliado($modelCliente){
+      return clienteDao::crearClienteAfiliado($modelCliente);
     }
 
 }

@@ -12,8 +12,8 @@
     null,
     "Afiliado",
     $_POST['idempleado'],
-    $_POST['registro'],
-    $_POST['fecha_registro'],
+    null,
+    null,
     $_POST['nombre_apellido'],
     $_POST['documento'],
     $_POST['sexo'],
@@ -22,7 +22,7 @@
     $_POST['telefono'],
     $_POST['celular'],
     $_POST['email'],
-    $_POST['dispacidad'],
+    $_POST['discapacidad'],
     $_POST['extracto'],
     $_POST['nombre_beneficiario'],
     $_POST['sexo_beneficiario'],
@@ -73,16 +73,16 @@
     $_POST['anemia'],
     $_POST['pulmonia'],
     $_POST['otras_cual'],
-    1
+    null
  );
   if(clienteController::registrarAfiliado($modelCliente)){
   
   echo "<div class='alert alert-primary' role='alert'>
-             Registro de cliente completo ! &nbsp
+             Registro de afiliado completo ! &nbsp
            </div>";
   }else{
     echo "<div class='alert alert-danger' role='alert'>
-             Error no se puede registrar el cliente !    
+             Error no se puede registrar el afiliado !    
            </div>";  
   }
  ?>

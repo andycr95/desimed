@@ -12,7 +12,7 @@ class empleadoController
     $objempleado = new empleadoDao();
     $arrayempleado=$objempleado->listaAsesoras();
     echo "<label for='country'>Asesoras disponibles:</label>
-                <select class='form-control custom-select d-block w-100' id='selectAsesoras' name='selectAsesoras'>";
+                <select class='form-control custom-select d-block w-100' id='idempleado' name='idempleado'>";
                     foreach ($arrayempleado as $key => $value) {
     echo           "<option value='".$arrayempleado[$key]->getIdempleado()."'>
                    ".$arrayempleado[$key]->getNombre_empleado()." - ".$arrayempleado[$key]->getTipo_empleado()."</option>";
